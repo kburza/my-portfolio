@@ -9,6 +9,7 @@ interface Subtitle {
 interface Step {
   title: string;
   description: string;
+  addinfo: string;
   content: Subtitle[];
 }
 
@@ -19,7 +20,9 @@ interface TimelineItemProps {
 
 const steps = [
   {
-    title: "TMU — Bachelor of Computer Engineering",
+    title: "TMU",
+    addinfo:
+      "Toronto Metropolitan University (f.k.a Ryerson University) — Bachelor of Computer Engineering",
     description: "Sept. 2018 — April. 2023 | Toronto, Ontario",
     content: [
       {
@@ -42,7 +45,9 @@ const steps = [
     ],
   },
   {
-    title: "Philip Pocock — Secondary School Diploma",
+    title: "Philip Pocock",
+    addinfo:
+      "Philip Pocock Catholic Secondary School — Secondary School Diploma",
     description: "Sept. 2014 — June 2018 | Mississauga, Ontario",
     content: [
       {
@@ -59,7 +64,9 @@ const steps = [
     ],
   },
   {
-    title: "Polish Consulate — High School Diploma",
+    title: "Polish Consulate",
+    addinfo:
+      "Bishop Allen Catholic Secondary School — Elementary/Secondary School Diploma",
     description: "Sept. 2005 — June 2018 | Etobicoke, Ontario",
     content: [
       {
@@ -81,6 +88,11 @@ const TimelineItem: React.FC<TimelineItemProps> = ({ data, index }) => {
           >
             {title}
           </span>
+          {data.addinfo && (
+            <li key={data.addinfo} className={styles["li-outside"]}>
+              {data.addinfo}
+            </li>
+          )}
           <span className={styles["container-content-header-title"]}>
             {description}
           </span>
@@ -90,10 +102,10 @@ const TimelineItem: React.FC<TimelineItemProps> = ({ data, index }) => {
             <li key={item.title} className={styles["li-outside"]}>
               {item.title}
               <ul>
-                {item.subtitles.map((item, index) => (
-                  <span className={styles["contcont"]} key={item}>
+                {item.subtitles.map((subtitle, index) => (
+                  <span className={styles["contcont"]} key={subtitle}>
                     •&nbsp;
-                    <li className={styles["li-inside"]}>{item}</li>
+                    <li className={styles["li-inside"]}>{subtitle}</li>
                   </span>
                 ))}
               </ul>
