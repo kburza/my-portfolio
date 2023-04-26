@@ -33,7 +33,7 @@ const NAV_ITEMS: Array<NavItem> = [
 
 export default function Navbar() {
   const { systemTheme, theme, setTheme } = useTheme();
-  const currentTheme = theme === "system" ? systemTheme : theme;
+  const currentTheme = "dark";
   const pathname = usePathname();
   const [navbar, setNavbar] = useState(false);
   return (
