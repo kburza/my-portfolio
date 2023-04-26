@@ -3,6 +3,8 @@ import React from "react";
 import { useState } from "react";
 import { Link } from "react-scroll/modules";
 import { usePathname } from "next/navigation";
+import { useTheme } from "next-themes";
+import { RiMoonFill, RiSunLine } from "react-icons/ri";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
 
 interface NavItem {
@@ -30,6 +32,8 @@ const NAV_ITEMS: Array<NavItem> = [
 ];
 
 export default function Navbar() {
+  const { systemTheme, theme, setTheme } = useTheme();
+  const currentTheme = theme === "system" ? systemTheme : theme;
   const pathname = usePathname();
   const [navbar, setNavbar] = useState(false);
   return (
