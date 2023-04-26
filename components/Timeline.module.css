@@ -165,8 +165,8 @@
   .container-item:last-child::after {
     border-image: linear-gradient(
         0deg,
-        #000000 0%, /* Changed the red color to white */
-        #ffffff 30%, /* Changed the red color to white */
+        #1B1817 0%, /* Changed the red color to white */
+        #1B1817 30%, /* Changed the red color to white */
         #ffffff 70%, /* Changed the red color to white */
         #ffffff 100%, /* Changed the red color to white */
         transparent 100% /* Add transparent color at the end */
