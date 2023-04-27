@@ -74,9 +74,11 @@ export default function Navbar() {
                 return (
                   <Link
                     key={idx}
+                    style={{ marginBottom: navbar ? "2em" : "0" }}
                     to={item.page}
                     className={
-                      "block lg:inline-block text-neutral-900  hover:text-neutral-500 dark:text-neutral-100"
+                      "block lg:inline-block text-neutral-900  hover:text-neutral-500 dark:text-neutral-100" +
+                      (navbar && idx === NAV_ITEMS.length - 1 ? " pb-0" : "")
                     }
                     activeClass="active"
                     spy={true}

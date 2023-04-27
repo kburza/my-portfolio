@@ -21,19 +21,27 @@ const projects = [
     github: "https://github.com/kburza/ML-Model-Capstone-Site",
     link: "https://rsa02.netlify.app/",
   },
-  // {
-  //   name: "Kator Family Photos",
-  //   description:
-  //     "Kator Family Photos is a photos and video digitization service in the LA area.",
-  //   image: "/familyphotos.png",
-  //   github: "https://github.com/hqasmei/katorfamilyphotos",
-  //   link: "https://katorfamilyphotos.com/",
-  // },
+  {
+    name: "SQL Headphones Database",
+    description:
+      "A convenient project to sort/analyze through various different types of industry-grade consumer headphones. Complete with SQL/XML implementations and Java JDBC functionality.",
+    image: "/head.png",
+    github: "https://github.com/kburza/sql-xml-headphones-database",
+    link: "https://github.com/kburza/sql-xml-headphones-database",
+  },
+  {
+    name: "Cyclone V FPGA Media Centre",
+    description:
+      "A lightweight and simple media centre implementation on the ALTERA Cyclone V FPGA coded in C. Complete with hand-drawn graphics and on-board controls.",
+    image: "/board.png",
+    github: "https://github.com/kburza/cyclone-v-fpga-media-center",
+    link: "https://github.com/kburza/cyclone-v-fpga-media-center",
+  },
 ];
 
 const ProjectsSection = () => {
   return (
-    <section id="projects">
+    <section id="projects" style={{ marginBottom: "15em" }}>
       <h1 className="my-10 text-center font-bold text-4xl">
         Projects
         <hr className="w-6 h-1 mx-auto my-4 bg-gray-500 border-0 rounded"></hr>
@@ -65,15 +73,20 @@ const ProjectsSection = () => {
                       <Link href={project.github} target="_blank">
                         <BsGithub
                           size={30}
-                          className="hover:-translate-y-1 transition-transform cursor-pointer"
+                          className="hover:-translate-y-1 transition                          transform cursor-pointer"
                         />
                       </Link>
-                      <Link href={project.link} target="_blank">
-                        <BsArrowUpRightSquare
-                          size={30}
-                          className="hover:-translate-y-1 transition-transform cursor-pointer"
-                        />
-                      </Link>
+                      {![
+                        "SQL Headphones Database",
+                        "Cyclone V FPGA Media Centre",
+                      ].includes(project.name) && (
+                        <Link href={project.link} target="_blank">
+                          <BsArrowUpRightSquare
+                            size={30}
+                            className="hover:-translate-y-1 transition-transform cursor-pointer"
+                          />
+                        </Link>
+                      )}
                     </div>
                   </div>
                 </div>
