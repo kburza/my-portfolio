@@ -6,20 +6,20 @@ import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs";
 
 const projects = [
   {
-    name: "Arashi Furniture",
-    description:
-      "We create quality artisan setpieces for your home. Take an in-depth look at the tables we make, and wood we use.",
-    image: "/arashi.png",
-    github: "https://github.com/kburza/ArashiFurniture",
-    link: "http://arashiartdecor.ca/",
-  },
-  {
     name: "DLSTR-ML",
     description:
       "Robust and convenient machine learning model security and privacy testing.",
     image: "/dlstr.png",
     github: "https://github.com/kburza/ML-Model-Capstone-Site",
     link: "https://rsa02.netlify.app/",
+  },
+  {
+    name: "Arashi Furniture",
+    description:
+      "Artisan wood home decor website for Arashi Inc., based in Mississauga, Ontario",
+    image: "/arashi.png",
+    github: "https://github.com/kburza/ArashiFurniture",
+    link: "http://arashiartdecor.ca/",
   },
   {
     name: "SQL Headphones Database",
@@ -46,12 +46,12 @@ const projects = [
     link: "https://github.com/kburza/cyclone-v-fpga-media-center",
   },
   {
-    name: "Art Blog",
+    name: "Blog",
     description:
-      "Check out the art/designs that I work on in my spare time (in service of projects or just as a hobby).",
+      "Check out the art/designs that I work on in my spare time (in service of projects or just as a hobby). View my opinions on the various media I consume.",
     image: "/art.png",
-    github: "https://github.com/kburza/cyclone-v-fpga-media-center",
-    link: "https://github.com/kburza/cyclone-v-fpga-media-center",
+    github: "",
+    link: "/blog",
   },
 ];
 
@@ -86,11 +86,11 @@ const ProjectsSection = () => {
                       {project.description}
                     </p>
                     <div className="flex flex-row align-bottom space-x-4">
-                      {project.name !== "Art Blog" && (
+                      {project.name !== "Blog" && (
                         <Link href={project.github} target="_blank">
                           <BsGithub
                             size={30}
-                            className="hover:-translate-y-1 transition                          transform cursor-pointer"
+                            className="hover:-translate-y-1 transition transform cursor-pointer"
                           />
                         </Link>
                       )}
@@ -98,6 +98,7 @@ const ProjectsSection = () => {
                         "SQL Headphones Database",
                         "Cyclone V FPGA Media Centre",
                         "Secure Java Bank App",
+                        "Blog",
                       ].includes(project.name) && (
                         <Link href={project.link} target="_blank">
                           <BsArrowUpRightSquare
