@@ -74,7 +74,7 @@ const BlogSection = () => {
                       alt=""
                       width={1000}
                       height={1000}
-                      className="rounded-xl shadow-xl hover:opacity-100"
+                      className="hover:opacity-100"
                       style={{ maxHeight: "30em", objectFit: "contain" }}
                     />
                   </div>
