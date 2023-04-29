@@ -30,10 +30,26 @@ const projects = [
     link: "https://github.com/kburza/sql-xml-headphones-database",
   },
   {
+    name: "Secure Java Bank App",
+    description:
+      "An encrypted (RSA/AES) Java GUI for bank account management through the use of socket programming and SQL database implementation.",
+    image: "/bank.png",
+    github: "https://github.com/kburza/java-bank-socket-app",
+    link: "https://github.com/kburza/java-bank-socket-app",
+  },
+  {
     name: "Cyclone V FPGA Media Centre",
     description:
       "A lightweight and simple media centre implementation on the ALTERA Cyclone V FPGA coded in C. Complete with hand-drawn graphics and on-board controls.",
     image: "/board.png",
+    github: "https://github.com/kburza/cyclone-v-fpga-media-center",
+    link: "https://github.com/kburza/cyclone-v-fpga-media-center",
+  },
+  {
+    name: "Art Blog",
+    description:
+      "Check out the art/designs that I work on in my spare time (in service of projects or just as a hobby).",
+    image: "/art.png",
     github: "https://github.com/kburza/cyclone-v-fpga-media-center",
     link: "https://github.com/kburza/cyclone-v-fpga-media-center",
   },
@@ -70,15 +86,18 @@ const ProjectsSection = () => {
                       {project.description}
                     </p>
                     <div className="flex flex-row align-bottom space-x-4">
-                      <Link href={project.github} target="_blank">
-                        <BsGithub
-                          size={30}
-                          className="hover:-translate-y-1 transition                          transform cursor-pointer"
-                        />
-                      </Link>
+                      {project.name !== "Art Blog" && (
+                        <Link href={project.github} target="_blank">
+                          <BsGithub
+                            size={30}
+                            className="hover:-translate-y-1 transition                          transform cursor-pointer"
+                          />
+                        </Link>
+                      )}
                       {![
                         "SQL Headphones Database",
                         "Cyclone V FPGA Media Centre",
+                        "Secure Java Bank App",
                       ].includes(project.name) && (
                         <Link href={project.link} target="_blank">
                           <BsArrowUpRightSquare
