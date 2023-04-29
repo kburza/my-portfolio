@@ -48,10 +48,10 @@ const projects = [
   {
     name: "Blog",
     description:
-      "Check out the art/designs that I work on in my spare time (in service of projects or just as a hobby). View my opinions on the various media I consume.",
+      "Check out the art/designs that I work on in my spare time (in service of projects or just as a hobby). Coming soon: View my opinions on the various media I consume.",
     image: "/art.png",
     github: "",
-    link: "/blog",
+    link: "/blog/#",
   },
 ];
 
