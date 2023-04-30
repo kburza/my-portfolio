@@ -5,6 +5,8 @@ import { useTheme } from "next-themes";
 import { RiMoonFill, RiSunLine } from "react-icons/ri";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
 import { AiFillHome } from "react-icons/ai";
+import { FaPaintBrush } from "react-icons/fa";
+import { RiMovie2Fill } from "react-icons/ri";
 import NextLink from "next/link"; // Import NextLink for navigation to root homepage
 
 interface NavItem {
@@ -48,7 +50,8 @@ export default function Navbar() {
   };
 
   // Check if the current page is the blog page
-  const isBlogPage = pathname === "/blog";
+  const isBlogPage = pathname === "/artblog" || pathname === "/mediablog";
+  const title = isBlogPage ? "KBlog 🌩️" : "Kacper Burza";
 
   return (
     <header className="w-full mx-auto  px-4 sm:px-20 fixed top-0 z-50 shadow bg-white dark:bg-stone-900 dark:border-b dark:border-stone-600">
@@ -57,7 +60,7 @@ export default function Navbar() {
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <Link to="home">
               <div className="container flex items-center space-x-2">
-                <h2 className="text-2xl font-bold">Kacper Burza</h2>
+                <h2 className="text-2xl font-bold">{title}</h2>
               </div>
             </Link>
             <div className="md:hidden">
@@ -78,13 +81,31 @@ export default function Navbar() {
             }`}
           >
             {isBlogPage ? (
-              <div className="flex items-center">
-                <NextLink href="/">
-                  <AiFillHome
-                    size={30}
-                    className="text-neutral-900 dark:text-neutral-100 hover:text-neutral-500 cursor-pointer"
-                  />
-                </NextLink>
+              <div className="flex flex-col items-center space-y-6 md:flex-row md:space-x-4 md:space-y-0">
+                <div onClick={handleLinkClick}>
+                  <NextLink href="/">
+                    <AiFillHome
+                      size={30}
+                      className="text-neutral-900 dark:text-neutral-100 hover:text-neutral-500 cursor-pointer"
+                    />
+                  </NextLink>
+                </div>
+                <div onClick={handleLinkClick}>
+                  <NextLink href="/artblog/#">
+                    <FaPaintBrush
+                      size={30}
+                      className="text-neutral-900 dark:text-neutral-100 hover:text-neutral-500 cursor-pointer"
+                    />
+                  </NextLink>
+                </div>
+                <div onClick={handleLinkClick}>
+                  <NextLink href="/mediablog/#">
+                    <RiMovie2Fill
+                      size={30}
+                      className="text-neutral-900 dark:text-neutral-100 hover:text-neutral-500 cursor-pointer"
+                    />
+                  </NextLink>
+                </div>
               </div>
             ) : (
               <div className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">

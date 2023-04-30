@@ -5,7 +5,7 @@ import { HiArrowDown } from "react-icons/hi";
 
 const HeroSection = () => {
   const resumeUrl =
-    "https://www.dropbox.com/s/clwhabhsyt7iof9/Kacper%20Burza%20Resume%202023.pdf?raw=1";
+    "https://drive.google.com/file/d/1uSa0oeQr4iAm3iqSS8kZUec2lryNGKTG/view";
 
   return (
     <section id="home">

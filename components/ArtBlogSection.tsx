@@ -9,57 +9,57 @@ const art_elements = [
     name: "eMiL",
     description:
       "An interactive mascot/helper for the DLSTR-ML website. His task is to aid any newcomers to the world of machine learning model scanning and security.",
-    image: "/eMiL.png",
+    image: "/artblog/eMiL.png",
   },
   {
     name: "eViL",
     description:
       "The 'archnemesis' of eMiL, he representes the bugs/vulnerabiltiies that are sustained by a model during attacks.",
-    image: "/eViL.png",
+    image: "/artblog/eViL.png",
   },
   {
     name: "Title Screen",
     description:
       "Made for the 2016 University of Toronto Game Maker Competition, this serves as the title screen/backdrop for the game's futuristic dystopian setting.",
-    image: "/gmc1.PNG",
+    image: "/artblog/gmc1.PNG",
   },
   {
     name: "Huai",
     description:
       "A planned in-game boss, Huai (Chinese: Evil/Wicked) ruled over a district depicted on the back of his head. He was designed after ancient warriors with influences from modern biker helmets ('16 UofT Game Maker Competition)",
-    image: "/gmc2.PNG",
+    image: "/artblog/gmc2.PNG",
   },
   {
     name: "Xingzhi",
     description:
       "A planned in-game boss, Xingzhi (Chinese: Nature) ruled over a district depicted on the back of his head. This boss was designed after nature/greenery and would be set in a lush overgrown metropolis ('16 UofT Game Maker Competition)",
-    image: "/gmc3.PNG",
+    image: "/artblog/gmc3.PNG",
   },
   {
     name: "Ren",
     description:
       "The protagonist of the game, Ren is a cyborg ninja that carries a sword with which uses to vanquish his enemies ('16 UofT Game Maker Competition)",
-    image: "/gmc4.PNG",
+    image: "/artblog/gmc4.PNG",
   },
   {
     name: "Undertale Fanart",
     description: "Two heroes from the game admiring a castle in the night sky.",
-    image: "/undertalefanart.jpg",
+    image: "/artblog/undertalefanart.jpg",
   },
   {
     name: "dump",
     description: "dump",
-    image: "/dump1.jpeg",
+    image: "/artblog/dump1.jpeg",
   },
 ];
 
-const BlogSection = () => {
+const ArtBlogSection = () => {
   const resumeUrl =
     "https://www.dropbox.com/s/clwhabhsyt7iof9/Kacper%20Burza%20Resume%202023.pdf?raw=1";
 
   return (
     <section
-      id="blog"
+      id="artblog"
       className="flex flex-col text-center items-center justify-center animate-fadeIn animation-delay-2 my-10 py-16 sm:py-32 md:py-48 md:flex-row md:space-x-4"
     >
       <div className="flex flex-col  my-10 py-16 space-y-28 w-full max-w-5xl">
@@ -97,4 +97,4 @@ const BlogSection = () => {
   );
 };
 
-export default BlogSection;
+export default ArtBlogSection;
