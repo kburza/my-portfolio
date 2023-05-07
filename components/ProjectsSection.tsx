@@ -8,7 +8,7 @@ const projects = [
   {
     name: "DLSTR-ML",
     description:
-      "Robust and convenient machine learning model security and privacy testing.",
+      "Deep Learning Security Aggregate Tool. Uploads a tensorflow model and dataset to a GCP bucket which runs various open-source attacks on the ML model.",
     image: "/dlstr.png",
     github: "https://github.com/kburza/ML-Model-Capstone-Site",
     link: "https://rsa02.netlify.app/",
@@ -16,7 +16,7 @@ const projects = [
   {
     name: "Arashi Furniture",
     description:
-      "Artisan wood home decor website for Arashi Inc., based in Mississauga, Ontario",
+      "Sleek and attractive artisan wood home decor website for Arashi Inc., based in Mississauga, Ontario",
     image: "/arashi.png",
     github: "https://github.com/kburza/ArashiFurniture",
     link: "http://arashiartdecor.ca/",
@@ -48,7 +48,7 @@ const projects = [
   {
     name: "Blog",
     description:
-      "Check out the art/designs that I work on in my spare time (in service of projects or just as a hobby). Coming soon: View my opinions on the various media I consume.",
+      "Check out the art and designs that I work on in service of projects or just as a hobby. Also, view my opinions on the various media I consume in my spare time.",
     image: "/art.png",
     github: "",
     link: "/artblog/#",

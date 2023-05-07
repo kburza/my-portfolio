@@ -28,7 +28,7 @@ const steps = [
       {
         title: "Achievements:",
         subtitles: [
-          "Graduated with a GPA 3.5/80%+",
+          "Graduated with a Cumulative GPA of 3.2 (A/85%+)",
           "2021-2022 (3rd Year) Dean’s List in the Faculty of Engineering",
         ],
       },

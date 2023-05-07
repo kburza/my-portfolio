@@ -98,7 +98,9 @@ export default function Navbar() {
                     />
                   </NextLink>
                 </div>
-                <div onClick={handleLinkClick}>
+                <div className="mb-4 md:mb-0" onClick={handleLinkClick}>
+                  {" "}
+                  {/* Add the marginBottom here */}
                   <NextLink href="/mediablog/#">
                     <RiMovie2Fill
                       size={30}
