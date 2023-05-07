@@ -38,17 +38,10 @@ export default function Navbar() {
   const currentTheme = "dark";
   const pathname = usePathname();
   const [navbar, setNavbar] = useState(false);
-  const [title, setTitle] = useState("Kacper Burza"); // Add state for title
 
   useEffect(() => {
     setTheme("dark");
   }, []);
-
-  useEffect(() => {
-    // Update the title when pathname changes
-    const isBlogPage = pathname === "/artblog" || pathname === "/mediablog";
-    setTitle(isBlogPage ? "KBlog 🌩️" : "Kacper Burza");
-  }, [pathname]);
 
   const handleLinkClick = () => {
     if (typeof window !== "undefined" && window.innerWidth <= 768) {
@@ -57,8 +50,13 @@ export default function Navbar() {
   };
 
   // Check if the current page is the blog page
+  const isHomePage = pathname === "/";
   const isBlogPage = pathname === "/artblog" || pathname === "/mediablog";
-  // const title = isBlogPage ? "KBlog 🌩️" : "Kacper Burza";
+  const title = isBlogPage
+    ? "KBlog 🌩️"
+    : isHomePage
+    ? "Kacper Burza"
+    : "Kacper Burza";
 
   return (
     <header className="w-full mx-auto  px-4 sm:px-20 fixed top-0 z-50 shadow bg-white dark:bg-stone-900 dark:border-b dark:border-stone-600">
