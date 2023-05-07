@@ -30,6 +30,14 @@ const projects = [
     link: "https://github.com/kburza/sql-xml-headphones-database",
   },
   {
+    name: "Docker Demo App",
+    description:
+      "A simple Node.js container that displays the docker logo throguh ascii art on your local machine.",
+    image: "/docker.png",
+    github: "https://github.com/kburza/docker-demo",
+    link: "https://github.com/kburza/docker-demo",
+  },
+  {
     name: "Secure Java Bank App",
     description:
       "An encrypted (RSA/AES) Java GUI for bank account management through the use of socket programming and SQL database implementation.",
@@ -99,6 +107,7 @@ const ProjectsSection = () => {
                         "Cyclone V FPGA Media Centre",
                         "Secure Java Bank App",
                         "Blog",
+                        "Docker Demo App",
                       ].includes(project.name) && (
                         <Link href={project.link} target="_blank">
                           <BsArrowUpRightSquare
