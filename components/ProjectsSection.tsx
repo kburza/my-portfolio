@@ -32,7 +32,7 @@ const projects = [
   {
     name: "Docker Demo App",
     description:
-      "A simple Node.js container that displays the docker logo throguh ascii art on your local machine.",
+      "A simple Node.js container that displays the docker logo through ASCII art on your local machine.",
     image: "/docker.png",
     github: "https://github.com/kburza/docker-demo",
     link: "https://github.com/kburza/docker-demo",
