@@ -22,6 +22,8 @@ const skills = [
   { skill: "Three.js" },
   { skill: "Tailwind CSS" },
   { skill: "Matlab" },
+  { skill: "Docker" },
+  { skill: "AWS" },
 ];
 
 const AboutSection = () => {
