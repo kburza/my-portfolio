@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import SlideUp from "./SlideUp";
 import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs";
+import { FaAws } from "react-icons/fa";
 
 const projects = [
   {
@@ -22,20 +23,20 @@ const projects = [
     link: "http://arashiartdecor.ca/",
   },
   {
+    name: "AWS Node Docker Demo App",
+    description:
+      "A simple Node.js app in a Docker container that displays the docker logo through ASCII art on your local machine. Deployed on an Amazon Web Services Ubuntu Virtual EC2 instance.",
+    image: "/docker.png",
+    github: "https://github.com/kburza/docker-demo",
+    link: "http://34.236.145.136:8000/",
+  },
+  {
     name: "SQL Headphones Database",
     description:
       "A convenient project to sort/analyze through various different types of industry-grade consumer headphones. Complete with SQL/XML implementations and Java JDBC functionality.",
     image: "/head.png",
     github: "https://github.com/kburza/sql-xml-headphones-database",
     link: "https://github.com/kburza/sql-xml-headphones-database",
-  },
-  {
-    name: "Docker Demo App",
-    description:
-      "A simple Node.js container that displays the docker logo through ASCII art on your local machine.",
-    image: "/docker.png",
-    github: "https://github.com/kburza/docker-demo",
-    link: "https://github.com/kburza/docker-demo",
   },
   {
     name: "Secure Java Bank App",
@@ -66,11 +67,13 @@ const projects = [
 const ProjectsSection = () => {
   return (
     <section id="projects" style={{ marginBottom: "15em" }}>
-      <h1 className="my-10 text-center font-bold text-4xl">
+      <h1
+        className="my-10 text-center
+font-bold text-4xl"
+      >
         Projects
         <hr className="w-6 h-1 mx-auto my-4 bg-gray-500 border-0 rounded"></hr>
       </h1>
-
       <div className="flex flex-col space-y-28">
         {projects.map((project, idx) => {
           return (
@@ -102,19 +105,28 @@ const ProjectsSection = () => {
                           />
                         </Link>
                       )}
-                      {![
-                        "SQL Headphones Database",
-                        "Cyclone V FPGA Media Centre",
-                        "Secure Java Bank App",
-                        "Blog",
-                        "Docker Demo App",
-                      ].includes(project.name) && (
+                      {project.name === "AWS Node Docker Demo App" ? (
                         <Link href={project.link} target="_blank">
-                          <BsArrowUpRightSquare
+                          <FaAws
                             size={30}
                             className="hover:-translate-y-1 transition-transform cursor-pointer"
                           />
                         </Link>
+                      ) : (
+                        ![
+                          "SQL Headphones Database",
+                          "Cyclone V FPGA Media Centre",
+                          "Secure Java Bank App",
+                          "Blog",
+                          "Docker Demo App",
+                        ].includes(project.name) && (
+                          <Link href={project.link} target="_blank">
+                            <BsArrowUpRightSquare
+                              size={30}
+                              className="hover:-translate-y-1 transition-transform cursor-pointer"
+                            />
+                          </Link>
+                        )
                       )}
                     </div>
                   </div>
