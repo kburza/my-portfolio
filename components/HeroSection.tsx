@@ -30,7 +30,8 @@ const HeroSection = () => {
             As a Toronto Metropolitan University (TMU){" "}
             <span className="font-bold">Computer Engineering </span>
             graduate, I am eager to explore the world of systems and design with
-            a keen interest in networks and graphical user interfaces.
+            a keen interest in front-end software development and graphical user
+            interfaces.
           </p>
           <a
             href={resumeUrl}
