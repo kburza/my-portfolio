@@ -42,11 +42,11 @@ const HeroSection = () => {
             Resume
           </a>
           <p className="text-sm text-gray-500 mt-4 mb-6 md:text-base">
-            Website Langauges: <FaReact className="inline text-primary" />{" "}
+            Site Langauges: <FaReact className="inline text-primary" />{" "}
             <SiNextdotjs className="inline text-primary" />{" "}
             <SiTailwindcss className="inline text-primary" />
             <br />
-            Asset Storage: <FaAws className="inline text-primary" />
+            Asset Hosting: <FaAws className="inline text-primary" />
           </p>
         </div>
       </div>
