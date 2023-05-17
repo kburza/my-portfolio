@@ -10,7 +10,7 @@ const media_elements = [
     name: "Porco Russo",
     description:
       "Set in a world where air/marine travel are the primary methods of transportation, this movie about a cursed veteran pilot who has lost hope in humanity. This film was a lot deeper than I anticipated, it definitely caught me off-guard with its emotional complexity and dark themes. The genius of Hayao Miyazaki shines through the initially off-putting character designs.",
-    image: "/mediablog/porco_rosso.jpg",
+    image: "https://demo-bucket-kap.s3.amazonaws.com/mediablog/porco_rosso.jpg",
     rating: "8/10",
     link: "https://zoro.to/watch/porco-rosso-535?ep=57990",
   },
@@ -18,7 +18,7 @@ const media_elements = [
     name: "Angel's Egg",
     description:
       "A dystopian lovecraftian biblical retelling of the Noah's Arc story (along with many other biblical references). This movie puts a spin on the tale, asking questions from Christianity, humanity, and faith. Although the movie is extremely slow and depressing, the art style, world-building, and character design are incredibly strong.",
-    image: "/mediablog/angels_egg.jpg",
+    image: "https://demo-bucket-kap.s3.amazonaws.com/mediablog/angels_egg.jpg",
     rating: "9/10",
     link: "https://zoro.to/watch/angels-egg-1093?ep=84447",
   },
@@ -26,7 +26,7 @@ const media_elements = [
     name: "R4 / Ridge Racer Type 4 / Direct Audio",
     description:
       "Filled with 80s synth/jazz and a drum n' bass/jungle fusion of beats, these tracks slap vigorously. It's a miracle that a soundtrack of this quality was put together for a mere PS1 game.",
-    image: "/mediablog/r4.jpg",
+    image: "https://demo-bucket-kap.s3.amazonaws.com/mediablog/r4.jpg",
     rating: "👍",
     link: "https://www.youtube.com/watch?v=dBWKwbjj020&list=PL6PHQCxAqpJTLqJjrDXhr_rXx0ta5rv4M",
   },

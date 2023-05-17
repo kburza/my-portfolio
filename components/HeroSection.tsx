@@ -1,5 +1,8 @@
 import React from "react";
 import Image from "next/image";
+import { FaAws, FaReact } from "react-icons/fa";
+import { SiNextdotjs, SiTailwindcss } from "react-icons/si";
+import { IoLogoVercel } from "react-icons/io5";
 import { Link } from "react-scroll";
 import { HiArrowDown } from "react-icons/hi";
 
@@ -12,7 +15,7 @@ const HeroSection = () => {
       <div className="flex flex-col text-center items-center justify-center animate-fadeIn animation-delay-2 my-10 py-16 sm:py-32 md:py-48 md:flex-row md:space-x-4 md:text-left">
         <div className="md:mt-2 md:w-1/2">
           <Image
-            src="/headshot.png"
+            src="https://demo-bucket-kap.s3.amazonaws.com/headshot.png"
             alt=""
             width={325}
             height={325}
@@ -38,6 +41,13 @@ const HeroSection = () => {
           >
             Resume
           </a>
+          <p className="text-sm text-gray-500 mt-4 mb-6 md:text-base">
+            Website Langauges: <FaReact className="inline text-primary" />{" "}
+            <SiNextdotjs className="inline text-primary" />{" "}
+            <SiTailwindcss className="inline text-primary" />
+            <br />
+            Asset Storage: <FaAws className="inline text-primary" />
+          </p>
         </div>
       </div>
       {/* ARROW POINTING DOWN ANIMATION */}

@@ -9,47 +9,48 @@ const art_elements = [
     name: "eMiL",
     description:
       "An interactive mascot/helper for the DLSTR-ML website. His task is to aid any newcomers to the world of machine learning model scanning and security.",
-    image: "/artblog/eMiL.png",
+    image: "https://demo-bucket-kap.s3.amazonaws.com/artblog/eMiL.png",
   },
   {
     name: "eViL",
     description:
       "The 'archnemesis' of eMiL, he representes the bugs/vulnerabiltiies that are sustained by a model during attacks.",
-    image: "/artblog/eViL.png",
+    image: "https://demo-bucket-kap.s3.amazonaws.com/artblog/eViL.png",
   },
   {
     name: "Title Screen",
     description:
       "Made for the 2016 University of Toronto Game Maker Competition, this serves as the title screen/backdrop for the game's futuristic dystopian setting.",
-    image: "/artblog/gmc1.PNG",
+    image: "https://demo-bucket-kap.s3.amazonaws.com/artblog/gmc1.PNG",
   },
   {
     name: "Huai",
     description:
       "A planned in-game boss, Huai (Chinese: Evil/Wicked) ruled over a district depicted on the back of his head. He was designed after ancient warriors with influences from modern biker helmets ('16 UofT Game Maker Competition)",
-    image: "/artblog/gmc2.PNG",
+    image: "https://demo-bucket-kap.s3.amazonaws.com/artblog/gmc2.PNG",
   },
   {
     name: "Xingzhi",
     description:
       "A planned in-game boss, Xingzhi (Chinese: Nature) ruled over a district depicted on the back of his head. This boss was designed after nature/greenery and would be set in a lush overgrown metropolis ('16 UofT Game Maker Competition)",
-    image: "/artblog/gmc3.PNG",
+    image: "https://demo-bucket-kap.s3.amazonaws.com/artblog/gmc3.PNG",
   },
   {
     name: "Ren",
     description:
       "The protagonist of the game, Ren is a cyborg ninja that carries a sword with which uses to vanquish his enemies ('16 UofT Game Maker Competition)",
-    image: "/artblog/gmc4.PNG",
+    image: "https://demo-bucket-kap.s3.amazonaws.com/artblog/gmc4.PNG",
   },
   {
     name: "Undertale Fanart",
     description: "Two heroes from the game admiring a castle in the night sky.",
-    image: "/artblog/undertalefanart.jpg",
+    image:
+      "https://demo-bucket-kap.s3.amazonaws.com/artblog/undertalefanart.jpg",
   },
   {
     name: "dump",
     description: "dump",
-    image: "/artblog/dump1.jpeg",
+    image: "https://demo-bucket-kap.s3.amazonaws.com/artblog/dump1.jpeg",
   },
 ];
 

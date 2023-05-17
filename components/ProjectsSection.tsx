@@ -10,7 +10,8 @@ const projects = [
     name: "DLSTR-ML",
     description:
       "Deep Learning Security Aggregate Tool. Uploads a tensorflow model and dataset to a GCP bucket which runs various open-source attacks on the ML model.",
-    image: "/dlstr.png",
+    image:
+      "https://demo-bucket-kap.s3.amazonaws.com/my-portfolio-projects-assets/my-portfolio-projects-assets/dlstr.png",
     github: "https://github.com/kburza/ML-Model-Capstone-Site",
     link: "https://rsa02.netlify.app/",
   },
@@ -18,7 +19,8 @@ const projects = [
     name: "Arashi Furniture",
     description:
       "Sleek and attractive artisan wood home decor website for Arashi Inc., based in Mississauga, Ontario",
-    image: "/arashi.png",
+    image:
+      "https://demo-bucket-kap.s3.amazonaws.com/my-portfolio-projects-assets/my-portfolio-projects-assets/arashi.png",
     github: "https://github.com/kburza/ArashiFurniture",
     link: "http://arashiartdecor.ca/",
   },
@@ -26,7 +28,8 @@ const projects = [
     name: "AWS Node Docker Demo App",
     description:
       "A simple Node.js app in a Docker container that displays the docker logo through ASCII art on your local machine. Deployed on an Amazon Web Services Ubuntu Virtual EC2 instance.",
-    image: "/docker.png",
+    image:
+      "https://demo-bucket-kap.s3.amazonaws.com/my-portfolio-projects-assets/my-portfolio-projects-assets/docker.png",
     github: "https://github.com/kburza/docker-demo",
     link: "http://34.236.145.136:8000/",
   },
@@ -34,7 +37,8 @@ const projects = [
     name: "SQL Headphones Database",
     description:
       "A convenient project to sort/analyze through various different types of industry-grade consumer headphones. Complete with SQL/XML implementations and Java JDBC functionality.",
-    image: "/head.png",
+    image:
+      "https://demo-bucket-kap.s3.amazonaws.com/my-portfolio-projects-assets/my-portfolio-projects-assets/head.png",
     github: "https://github.com/kburza/sql-xml-headphones-database",
     link: "https://github.com/kburza/sql-xml-headphones-database",
   },
@@ -42,7 +46,8 @@ const projects = [
     name: "Secure Java Bank App",
     description:
       "An encrypted (RSA/AES) Java GUI for bank account management through the use of socket programming and SQL database implementation.",
-    image: "/bank.png",
+    image:
+      "https://demo-bucket-kap.s3.amazonaws.com/my-portfolio-projects-assets/my-portfolio-projects-assets/bank.png",
     github: "https://github.com/kburza/java-bank-socket-app",
     link: "https://github.com/kburza/java-bank-socket-app",
   },
@@ -50,7 +55,8 @@ const projects = [
     name: "Cyclone V FPGA Media Centre",
     description:
       "A lightweight and simple media centre implementation on the ALTERA Cyclone V FPGA coded in C. Complete with hand-drawn graphics and on-board controls.",
-    image: "/board.png",
+    image:
+      "https://demo-bucket-kap.s3.amazonaws.com/my-portfolio-projects-assets/my-portfolio-projects-assets/board.png",
     github: "https://github.com/kburza/cyclone-v-fpga-media-center",
     link: "https://github.com/kburza/cyclone-v-fpga-media-center",
   },
@@ -58,7 +64,8 @@ const projects = [
     name: "Blog",
     description:
       "Check out the art and designs that I work on in service of projects or just as a hobby. Also, view my opinions on the various media I consume in my spare time.",
-    image: "/art.png",
+    image:
+      "https://demo-bucket-kap.s3.amazonaws.com/my-portfolio-projects-assets/my-portfolio-projects-assets/art.png",
     github: "",
     link: "/artblog/#",
   },
