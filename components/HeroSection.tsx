@@ -5,6 +5,7 @@ import { SiNextdotjs, SiTailwindcss } from "react-icons/si";
 import { IoLogoVercel } from "react-icons/io5";
 import { Link } from "react-scroll";
 import { HiArrowDown } from "react-icons/hi";
+import { RiReactjsLine } from "react-icons/ri";
 
 const HeroSection = () => {
   const resumeUrl =
@@ -43,7 +44,7 @@ const HeroSection = () => {
             Resume
           </a>
           <p className="text-sm text-gray-500 mt-4 mb-6 md:text-base">
-            Site Langauges: <FaReact className="inline text-primary" />{" "}
+            Site Langauges: <RiReactjsLine className="inline text-primary" />{" "}
             <SiNextdotjs className="inline text-primary" />{" "}
             <SiTailwindcss className="inline text-primary" />
             <br />

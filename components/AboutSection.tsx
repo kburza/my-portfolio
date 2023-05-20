@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { SiNextdotjs } from "react-icons/si";
 
 const skills = [
   { skill: "C" },
@@ -93,6 +94,7 @@ const AboutSection = () => {
                     className="bg-gray-200 px-4 py-2 mr-2 mt-2 text-gray-500 rounded font-semibold"
                   >
                     {item.skill}
+                    {item.icon}
                   </p>
                 );
               })}
