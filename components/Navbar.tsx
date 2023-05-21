@@ -34,14 +34,15 @@ const NAV_ITEMS: Array<NavItem> = [
 ];
 
 export default function Navbar() {
-  const { systemTheme, theme, setTheme } = useTheme();
-  const currentTheme = "dark";
-  const pathname = usePathname();
-  const [navbar, setNavbar] = useState(false);
+  const { systemTheme, theme, setTheme } = useTheme()
+  const currentTheme = theme === "system" ? systemTheme : theme
+  const pathname = usePathname()
+  const [navbar, setNavbar] = useState(false)
 
-  useEffect(() => {
-    setTheme("dark");
-  }, []);
+  const manualSetTheme = (theme: string) => {
+    document.documentElement.setAttribute('data-theme', theme);
+    // store selected theme in local storage etc...
+  };
 
   const handleLinkClick = () => {
     if (typeof window !== "undefined" && window.innerWidth <= 768) {
@@ -137,6 +138,28 @@ export default function Navbar() {
                     </Link>
                   );
                 })}
+              {currentTheme === "dark" ? (
+        <button
+          onClick={() => {
+            setTheme("light");
+            manualSetTheme("light");
+          }}
+          className="bg-slate-100 p-2 rounded-xl"
+        >
+          <RiSunLine size={25} color="black" />
+        </button>
+      ) : (
+        <button
+          onClick={() => {
+            setTheme("dark");
+            manualSetTheme("dark");
+          }}
+          className="bg-slate-10 p-2 rounded-xl"
+        >
+          <RiMoonFill size={25} />
+        </button>
+      )}
+
               </div>
             )}
           </div>

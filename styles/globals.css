@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --color-background: white;
+    --color-text: black;
+    --color-border: rgba(0, 0, 0, 0.8);
+  }
+  
+  [data-theme="dark"] {
+    --color-background: black;
+    --color-text: white;
+    --color-border: rgba(255, 255, 255, 0.8);
+  }
+  
