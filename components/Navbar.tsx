@@ -34,10 +34,10 @@ const NAV_ITEMS: Array<NavItem> = [
 ];
 
 export default function Navbar() {
-  const { systemTheme, theme, setTheme } = useTheme()
-  const currentTheme = theme === "system" ? systemTheme : theme
-  const pathname = usePathname()
-  const [navbar, setNavbar] = useState(false)
+  const { systemTheme, theme, setTheme } = useTheme();
+  const [currentTheme, setCurrentTheme] = useState<string | undefined>();
+  const pathname = usePathname();
+  const [navbar, setNavbar] = useState(false);
 
   const manualSetTheme = (theme: string | undefined) => {
     if (!theme) {
@@ -51,6 +51,12 @@ export default function Navbar() {
     manualSetTheme(currentTheme);
   }, [currentTheme]);
 
+  useEffect(() => {
+    // This will run whenever 'theme' or 'systemTheme' changes,
+    // and update 'currentTheme' to always reflect the correct theme.
+    setCurrentTheme(theme === "system" ? systemTheme : theme);
+  }, [theme, systemTheme]);
+  
   function handleLinkClick() {
     if (typeof window !== "undefined" && window.innerWidth <= 768) {
       setNavbar(!navbar);
@@ -145,27 +151,29 @@ export default function Navbar() {
                     </Link>
                   );
                 })}
-              {currentTheme === "dark" ? (
-        <button
-          onClick={() => {
-            setTheme("light");
-            manualSetTheme("light");
-          }}
-          className="bg-slate-100 p-2 rounded-xl"
-        >
-          <RiSunLine size={25} color="black" />
-        </button>
-      ) : (
-        <button
-          onClick={() => {
-            setTheme("dark");
-            manualSetTheme("dark");
-          }}
-          className="bg-slate-10 p-2 rounded-xl"
-        >
-          <RiMoonFill size={25} />
-        </button>
-      )}
+
+                {currentTheme === "dark" ? (
+                  <button
+                    onClick={() => {
+                      setTheme("light");
+                      manualSetTheme("light");
+                    }}
+                    className="bg-slate-100 p-2 rounded-xl"
+                  >
+                    <RiSunLine size={25} color="black" />
+                  </button>
+                ) : (
+                  <button
+                    onClick={() => {
+                      setTheme("dark");
+                      manualSetTheme("dark");
+                    }}
+                    className="bg-slate-10 p-2 rounded-xl"
+                  >
+                    <RiMoonFill size={25} />
+                  </button>
+                )}
+
 
               </div>
             )}
