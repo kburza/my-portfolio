@@ -39,16 +39,23 @@ export default function Navbar() {
   const pathname = usePathname()
   const [navbar, setNavbar] = useState(false)
 
-  const manualSetTheme = (theme: string) => {
+  const manualSetTheme = (theme: string | undefined) => {
+    if (!theme) {
+      theme = "light"; // Default to light theme
+    }
     document.documentElement.setAttribute('data-theme', theme);
     // store selected theme in local storage etc...
   };
+  
+  useEffect(() => {
+    manualSetTheme(currentTheme);
+  }, [currentTheme]);
 
-  const handleLinkClick = () => {
+  function handleLinkClick() {
     if (typeof window !== "undefined" && window.innerWidth <= 768) {
       setNavbar(!navbar);
     }
-  };
+  }
 
   // Check if the current page is the blog page
   const isHomePage = pathname === "/";
