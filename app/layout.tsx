@@ -18,11 +18,7 @@ export default function RootLayout({
       */}
       <head />
       <body className="dark:bg-stone-900">
-        <ThemeProvider
-          defaultTheme="Dark"
-          enableSystem={false}
-          attribute="class"
-        >
+      <ThemeProvider enableSystem={true} attribute="class">
           <Navbar />
           {children}
           <Footer />
