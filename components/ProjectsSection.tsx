@@ -31,7 +31,7 @@ const projects = [
     image:
       "https://demo-bucket-kap.s3.amazonaws.com/my-portfolio-projects-assets/my-portfolio-projects-assets/docker.png",
     github: "https://github.com/kburza/docker-demo",
-    link: "54.147.110.7:8000",
+    link: "http://54.147.110.7:8000/",
   },
   {
     name: "SQL Headphones Database",
