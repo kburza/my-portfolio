@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import Image from "next/image";
 import { FaAws, FaReact } from "react-icons/fa";
@@ -6,6 +7,7 @@ import { IoLogoVercel } from "react-icons/io5";
 import { Link } from "react-scroll";
 import { HiArrowDown } from "react-icons/hi";
 import { RiReactjsLine } from "react-icons/ri";
+import { TiArrowSortedDown } from 'react-icons/ti';
 
 const HeroSection = () => {
   const resumeUrl =
@@ -52,8 +54,9 @@ const HeroSection = () => {
           </p>
         </div>
       </div>
+
       {/* ARROW POINTING DOWN ANIMATION */}
-      {/* <div className="flex flex-row items-center text-center justify-center ">
+      <div className="flex flex-row items-center text-center justify-center ">
         <Link
           to="about"
           activeClass="active"
@@ -62,9 +65,10 @@ const HeroSection = () => {
           offset={-100}
           duration={500}
         >
-          <HiArrowDown size={35} className="animate-bounce" />
+          <TiArrowSortedDown size={35} className="animate-bounce" />
         </Link>
-      </div> */}
+      </div>
+      
     </section>
   );
 };
