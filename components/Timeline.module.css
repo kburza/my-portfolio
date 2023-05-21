@@ -154,11 +154,14 @@
     line-height: 1.86;
     font-weight: 700;
   }
+  .li-inside {
+    color: #808080;
+  }
   
   .contcont {
     display: flex;
     flex-direction: row;
-    color: var(--color-text);
+    color: #808080;
     font-size: 1rem;
     margin-left: 20px;
   }

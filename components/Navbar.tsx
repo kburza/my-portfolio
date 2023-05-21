@@ -163,15 +163,17 @@ export default function Navbar() {
                     <RiSunLine size={25} color="black" />
                   </button>
                 ) : (
-                  <button
-                    onClick={() => {
-                      setTheme("dark");
-                      manualSetTheme("dark");
-                    }}
-                    className="bg-slate-10 p-2 rounded-xl"
-                  >
-                    <RiMoonFill size={25} />
-                  </button>
+<button
+  onClick={() => {
+    setTheme("dark");
+    manualSetTheme("dark");
+  }}
+  style={{backgroundColor: "#000000"}} 
+  className="p-2 rounded-xl"
+>
+  <RiMoonFill size={25} color="white"/>
+</button>
+
                 )}
 
 
