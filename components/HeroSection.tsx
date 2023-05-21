@@ -9,7 +9,7 @@ import { RiReactjsLine } from "react-icons/ri";
 
 const HeroSection = () => {
   const resumeUrl =
-    "https://drive.google.com/file/d/1uSa0oeQr4iAm3iqSS8kZUec2lryNGKTG/view";
+    "https://drive.google.com/file/d/1WotbWRV9yJTPKQgLxe6HWAw32Ns5Hwxt/view?usp=share_link";
 
   return (
     <section id="home">
