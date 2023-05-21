@@ -64,7 +64,7 @@ const MediaBlogSection = () => {
                     <p className="text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
                       {media_elements.description}
                     </p>
-                    <p className="text-xl leading-7 mb-4 text-white">
+                    <p className="text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
                       {media_elements.rating}
                     </p>
                     {media_elements.link && (
