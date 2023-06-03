@@ -99,7 +99,7 @@ const AboutSection = () => {
               })}
             </div>
             {/* <Image
-              src="/hero-image.png"
+              src="https://demo-bucket-kap.s3.amazonaws.com/certifications/awscert.png"
               alt=""
               width={325}
               height={325}
