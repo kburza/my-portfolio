@@ -11,7 +11,7 @@ import { TiArrowSortedDown } from 'react-icons/ti';
 
 const HeroSection = () => {
   const resumeUrl =
-    "https://drive.google.com/file/d/1WotbWRV9yJTPKQgLxe6HWAw32Ns5Hwxt/view?usp=share_link";
+    "https://demo-bucket-kap.s3.amazonaws.com/Kacper_Burza_Resume_2023.pdf";
 
   return (
     <section id="home">
