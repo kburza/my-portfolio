@@ -28,7 +28,7 @@ const steps = [
       {
         title: "Achievements:",
         subtitles: [
-          "Graduated with a Cumulative GPA of 3.2 (A/85%+)",
+          "Graduated with a Cumulative GPA of 3.17/4.33",
           "2021-2022 (3rd year) and 2022-2023 (4th Year) Dean’s List in the Faculty of Engineering and Architectural Science",
         ],
       },
@@ -40,6 +40,7 @@ const steps = [
           "Microprocessor Systems (Assembly/C/C++)",
           "Systems-on-Chip Design (C/Verilog)",
           "Intelligent Systems (Python)",
+          "Digital Signals Processing (Matlab)",
         ],
       },
     ],
