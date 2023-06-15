@@ -69,6 +69,24 @@ const art_elements = [
       "https://demo-bucket-kap.s3.amazonaws.com/artblog/undertalefanart.jpg",
   },
   {
+    name: "Pylon",
+    description:
+      "Twitch streamer commision. This rendition of the Pylon is expressing shock/pain. ",
+    image: "https://demo-bucket-kap.s3.amazonaws.com/artblog/pylon.png",
+  },
+  {
+    name: "Album Art 1",
+    description:
+      "Unused album art for a personal project long ago. The scrapped project was supposed to feature a lofi/rap fusion.",
+    image: "https://demo-bucket-kap.s3.amazonaws.com/artblog/unusedalbum.PNG",
+  },
+  {
+    name: "Album Art 2",
+    description:
+      "Unused album art for a personal project long ago. The scrapped project was supposed to be a trap banger.",
+    image: "https://demo-bucket-kap.s3.amazonaws.com/artblog/unusedalbum2.PNG",
+  },
+  {
     name: "dump",
     description: "dump",
     image: "https://demo-bucket-kap.s3.amazonaws.com/artblog/dump1.jpeg",
@@ -96,12 +114,11 @@ const ArtBlogSection = () => {
                         Security Tools Repository web-app. It was implemented
                         using the Three.js fiber package and serves as a
                         simplified dynamic version of the logo to promote
-                        positive user interactions upon entry.
+                        positive user interaction upon entry.
                       </p>
                     </div>
                   </SlideUp>
                 )}
-
                 <div key={idx} className="relative">
                   <SlideUp offset="-300px 0px -300px 0px">
                     <div className="flex flex-col items-center animate-slideUpCubiBezier animation-delay-2 md:flex-col md:space-x-0">
