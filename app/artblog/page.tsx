@@ -1,3 +1,5 @@
+"use client";
+
 import ArtBlogSection from "@/components/ArtBlogSection";
 export default function ArtBlog() {
   return (

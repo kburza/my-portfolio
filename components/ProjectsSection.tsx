@@ -12,7 +12,8 @@ const projects = [
       "Deep Learning Security Aggregate Tool. Uploads a tensorflow model and dataset to a GCP bucket which runs various open-source attacks on the ML model.",
     image:
       "https://demo-bucket-kap.s3.amazonaws.com/my-portfolio-projects-assets/my-portfolio-projects-assets/dlstr.png",
-    github: "https://github.com/kburza/ML-Model-Capstone-Site",
+    github:
+      "https://github.com/ncheungg/DEEP-LEARNING-SECURITY-TOOLS-REPOSITORY",
     link: "https://rsa02.netlify.app/",
   },
   {

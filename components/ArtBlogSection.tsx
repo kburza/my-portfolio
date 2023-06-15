@@ -4,6 +4,11 @@ import Link from "next/link";
 import { BsArrowUpRightSquare, BsGithub } from "react-icons/bs";
 import SlideUp from "./SlideUp";
 import { SiLinktree } from "react-icons/si";
+import dynamic from "next/dynamic";
+
+const ThreeD = dynamic(() => import("@/public/artblog/3D/ThreeD"), {
+  ssr: false,
+});
 
 const art_elements = [
   {
@@ -16,7 +21,7 @@ const art_elements = [
   {
     name: "Arashi Business Card (Back)",
     description:
-      "Front design of Arashi Art Decor's business card. The art features a composite promotional image of a wood resin table (similar to the front of the business card) as well as a scannable QR code which directs the user to the business' Linktree (for main webage, social medias, etc.) ",
+      "Front design of Arashi Art Decor's business card. The art features a composite promotional image of a wood resin table (similar to the front of the business card) as well as a scannable QR code which directs the user to the business' Linktree (for main webpage, social medias, etc.) ",
     linktree: "https://linktr.ee/arashiartdecor",
     image:
       "https://demo-bucket-kap.s3.amazonaws.com/artblog/Arashi_Business_Card_Back.jpeg",
@@ -30,7 +35,7 @@ const art_elements = [
   {
     name: "eViL",
     description:
-      "The 'archnemesis' of eMiL, he representes the bugs/vulnerabiltiies that are sustained by a model during attacks.",
+      "The 'archnemesis' of eMiL, he represents the bugs/vulnerabiltiies that are sustained by a model during attacks.",
     image: "https://demo-bucket-kap.s3.amazonaws.com/artblog/eViL.png",
   },
   {
@@ -72,55 +77,75 @@ const art_elements = [
 
 const ArtBlogSection = () => {
   return (
-    <section
-      id="artblog"
-      className="flex flex-col text-center items-center justify-center animate-fadeIn animation-delay-2 my-10 py-16 sm:py-32 md:py-48 md:flex-row md:space-x-4"
-    >
-      <div className="flex flex-col  my-10 py-16 space-y-28 w-full max-w-5xl">
-        {art_elements.map((art_element, idx) => {
-          return (
-            <div key={idx} className="relative">
-              <SlideUp offset="-300px 0px -300px 0px">
-                <div className="flex flex-col items-center animate-slideUpCubiBezier animation-delay-2 md:flex-col md:space-x-0">
-                  <div className="md:w-1/2 relative z-10 mx-auto">
-                    <Image
-                      src={art_element.image}
-                      alt=""
-                      width={1000}
-                      height={1000}
-                      className="hover:opacity-100"
-                      style={{ maxHeight: "30em", objectFit: "contain" }}
-                    />
-                  </div>
-                  <div className="mt-8 md:w-1/2 mx-auto text-center">
-                    <h1 className="text-4xl font-bold mb-6">
-                      {art_element.name}
-                    </h1>
-                    <p className="text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
-                      {art_element.description}
-                    </p>
-                    {art_element.linktree && (
-                      <div
-                        className="flex justify-center"
-                        style={{ paddingTop: "4px" }}
-                      >
-                        <Link href={art_element.linktree} target="_blank">
-                          <SiLinktree
-                            size={30}
-                            className="hover:-translate-y-1 transition-transform cursor-pointer"
-                          />
-                        </Link>
+    <>
+      <section
+        id="artblog"
+        className="flex flex-col text-center items-center justify-center animate-fadeIn animation-delay-2 my-10 py-16 sm:py-32 md:py-48 md:flex-row md:space-x-4"
+      >
+        <div className="flex flex-col  my-10 py-16 space-y-28 w-full max-w-5xl">
+          {art_elements.map((art_element, idx) => {
+            return (
+              <>
+                {idx === 2 && (
+                  <SlideUp offset="-300px 0px -300px 0px">
+                    <ThreeD />
+                    <div className="mt-8 md:w-1/2 mx-auto text-center">
+                      <h1 className="text-4xl font-bold mb-6">DLSTR-ML Logo</h1>
+                      <p className="text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
+                        A 3D Logo rendering created for the Deep Learning
+                        Security Tools Repository web-app. It was implemented
+                        using the Three.js fiber package and serves as a
+                        simplified dynamic version of the logo to promote
+                        positive user interactions upon entry.
+                      </p>
+                    </div>
+                  </SlideUp>
+                )}
+
+                <div key={idx} className="relative">
+                  <SlideUp offset="-300px 0px -300px 0px">
+                    <div className="flex flex-col items-center animate-slideUpCubiBezier animation-delay-2 md:flex-col md:space-x-0">
+                      <div className="md:w-1/2 relative z-10 mx-auto">
+                        <Image
+                          src={art_element.image}
+                          alt=""
+                          width={1000}
+                          height={1000}
+                          className="hover:opacity-100"
+                          style={{ maxHeight: "30em", objectFit: "contain" }}
+                        />
                       </div>
-                    )}
-                    <div className="flex flex-row align-bottom space-x-4"></div>
-                  </div>
+                      <div className="mt-8 md:w-1/2 mx-auto text-center">
+                        <h1 className="text-4xl font-bold mb-6">
+                          {art_element.name}
+                        </h1>
+                        <p className="text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
+                          {art_element.description}
+                        </p>
+                        {art_element.linktree && (
+                          <div
+                            className="flex justify-center"
+                            style={{ paddingTop: "4px" }}
+                          >
+                            <Link href={art_element.linktree} target="_blank">
+                              <SiLinktree
+                                size={30}
+                                className="hover:-translate-y-1 transition-transform cursor-pointer"
+                              />
+                            </Link>
+                          </div>
+                        )}
+                        <div className="flex flex-row align-bottom space-x-4"></div>
+                      </div>
+                    </div>
+                  </SlideUp>
                 </div>
-              </SlideUp>
-            </div>
-          );
-        })}
-      </div>
-    </section>
+              </>
+            );
+          })}
+        </div>
+      </section>
+    </>
   );
 };
 
