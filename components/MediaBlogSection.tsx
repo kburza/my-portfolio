@@ -30,6 +30,13 @@ const media_elements = [
     rating: "👍",
     link: "https://www.youtube.com/watch?v=dBWKwbjj020&list=PL6PHQCxAqpJTLqJjrDXhr_rXx0ta5rv4M",
   },
+  {
+    name: "Mother 3",
+    description: "Everyone I talk to is sick of hearing about this game.",
+    image: "https://demo-bucket-kap.s3.amazonaws.com/mediablog/mother3.png",
+    rating: "10/10",
+    link: "http://mother3.fobby.net/",
+  },
 ];
 
 const MediaBlogSection = () => {
