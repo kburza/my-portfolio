@@ -35,9 +35,9 @@ const projects = [
     link: "http://54.147.110.7:8000/",
   },
   {
-    name: "SQL Headphones Database",
+    name: "Java SQL Database Manager",
     description:
-      "A convenient project to sort/analyze through various different types of industry-grade consumer headphones. Complete with SQL/XML implementations and Java JDBC functionality.",
+      "Java applet to explore/manage SQl databases through the JDBC API. Complete with a dynamic ASCII UI and a fully realized industry-grade headphones database.",
     image:
       "https://demo-bucket-kap.s3.amazonaws.com/my-portfolio-projects-assets/my-portfolio-projects-assets/head.png",
     github: "https://github.com/kburza/sql-xml-headphones-database",
@@ -64,7 +64,7 @@ const projects = [
   {
     name: "Blog",
     description:
-      "Check out the art and designs that I work on in service of projects or just as a hobby. Also, view my opinions on the various media I consume in my spare time.",
+      "Check out the art and designs that I work on in service of projects or just as a hobby. Also, view my opinions on the various media that I consume in my spare time.",
     image:
       "https://demo-bucket-kap.s3.amazonaws.com/my-portfolio-projects-assets/my-portfolio-projects-assets/art.png",
     github: "",
