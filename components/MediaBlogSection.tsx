@@ -32,10 +32,18 @@ const media_elements = [
   },
   {
     name: "Mother 3",
-    description: "Everyone I talk to is sick of hearing about this game.",
-    image: "https://demo-bucket-kap.s3.amazonaws.com/mediablog/mother3.png",
+    description:
+      "Since it was never localized, not many outside of Japan got to experience this heartwarming (and at times, soul-crushing) tale. Once you get past the 'quirky' off-beat moments of Shigesato Itoi's slighlty cringe sense of humour, the story and characters really manage to your soul. At the end of it, I was sobbing on the couch like a baby. Everyone I talk to is sick of hearing about this game.",
+    image: "https://demo-bucket-kap.s3.amazonaws.com/mediablog/mother3.jpg",
     rating: "10/10",
     link: "http://mother3.fobby.net/",
+  },
+  {
+    name: "Mother 2/Earthbound",
+    description:
+      "Regarded as a cult classic by many, Earthbound encompasses a series of unpredictable and endearing story beats that continue to exert significant influence in today's gaming landscape. While it may not reach the storytelling heights of Shigesato Itoi's Mother 3, it possesses a distinct sense of authorship that can only be found in his handful of titles. I would highly recommend playing this game with the official guide, as it adheres to several archaic design choices commonly seen in retro games of its time, such as excessively tedious mazes and a lack of clear direction.",
+    image: "https://demo-bucket-kap.s3.amazonaws.com/mediablog/mother2.jpg",
+    rating: "8.5/10",
   },
 ];
 
