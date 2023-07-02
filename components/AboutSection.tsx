@@ -25,6 +25,7 @@ const skills = [
   { skill: "Matlab" },
   { skill: "Docker" },
   { skill: "AWS" },
+  { skill: "SOLIDWORKS" },
 ];
 
 const AboutSection = () => {

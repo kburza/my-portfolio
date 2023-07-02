@@ -13,6 +13,50 @@ import {
 
 const media_elements = [
   {
+    name: "NieR: Automata",
+    description:
+      "Once again, Yoko Tarodemonstrates his masterful ability to create a captivating world filled with deeply engaging characters in NieR Automata. Unlike its predecessor, Nier Replicant, this game introduces a near-perfect combat system that remains consistently enjoyable and addictive, even after the fifth playthrough. The seamless harmony between its compelling story, mesmerizing music, stunning visuals, and immersive gameplay is nothing short of extraordinary, making NieR Automata an unparalleled masterpiece within the realm of video games. Yoko Taro has proven to be the Shakespeare of the gaming medium.",
+    image: "https://demo-bucket-kap.s3.amazonaws.com/mediablog/nieraut.jpg",
+    rating: (
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <BsStarFill style={{ marginRight: "2px", color: "#FFD700" }} />
+        <BsStarFill style={{ marginRight: "2px", color: "#FFD700" }} />
+        <BsStarFill style={{ marginRight: "2px", color: "#FFD700" }} />
+        <BsStarFill style={{ marginRight: "2px", color: "#FFD700" }} />
+        <BsStarFill style={{ marginRight: "2px", color: "#FFD700" }} />
+      </div>
+    ),
+    link: "https://nierautomata.square-enix-games.com/en-us/age-gate/",
+  },
+  {
+    name: "NieR Replicant ver.1.22474487139...",
+    description:
+      "This is undeniably one of the most remarkable story-driven games I've had the pleasure of experiencing. Its characters, despite their 'uncanny' nature, manage to grip your heartstrings, while the profoundly philosophical narrative leaves your mind utterly astounded. However, the game's only letdown lies in its repetitive and monotonous gameplay. The combat is pretty shallow, and the quests frequently border on being excessively tedious, burdened with an abundance of backtracking. This game's soundtrack is nothing short of perfect and provided me with comfort on many sleepless nights.",
+    image: "https://demo-bucket-kap.s3.amazonaws.com/mediablog/nierrep.png",
+    rating: (
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <BsStarFill style={{ marginRight: "2px" }} />
+        <BsStarFill style={{ marginRight: "2px" }} />
+        <BsStarFill style={{ marginRight: "2px" }} />
+        <BsStarHalf style={{ marginRight: "2px" }} />
+        <BsStar style={{ marginRight: "2px" }} />
+      </div>
+    ),
+    link: "https://nier.square-enix-games.com/en-us/",
+  },
+  {
     name: "Dai Dark",
     description:
       "A fun and refreshing take on the sci-fi genre, Q-Hayashida (known for her work on Dorohedoro) delivers her signature 'gruesome' style of storytelling with a lovable cast of characters. Contrasting light-hearted story beats with body horror and a slight hint of mystery, this story manages to weave stone-age type visuals into a cosmic tale. The series is only 5 volumes deep as of this review, but the potential here is aStRonOmiCaL.",
@@ -152,7 +196,7 @@ const media_elements = [
         <BsStarFill style={{ marginRight: "2px" }} />
         <BsStarFill style={{ marginRight: "2px" }} />
         <BsStarFill style={{ marginRight: "2px" }} />
-        <BsStar style={{ marginRight: "2px" }} />
+        <BsStarHalf style={{ marginRight: "2px" }} />
         <BsStar style={{ marginRight: "2px" }} />
       </div>
     ),

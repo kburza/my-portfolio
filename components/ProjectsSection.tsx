@@ -17,7 +17,16 @@ const projects = [
     link: "https://rsa02.netlify.app/",
   },
   {
-    name: "Arashi Furniture",
+    name: "Arashi 2.0 (WIP)",
+    description:
+      "Node/React port of original Arashi website hosted on Vercel. Features an e-commerce look/feel with many dynamic and visually aesthetic elements.",
+    image:
+      "https://demo-bucket-kap.s3.amazonaws.com/my-portfolio-projects-assets/my-portfolio-projects-assets/arashi2.png",
+    github: "https://github.com/kburza/ArashiFurniture2",
+    link: "https://arashi-furniture2.vercel.app/",
+  },
+  {
+    name: "Arashi Art Decor",
     description:
       "Sleek and attractive artisan wood home decor website for Arashi Inc., based in Mississauga, Ontario",
     image:
