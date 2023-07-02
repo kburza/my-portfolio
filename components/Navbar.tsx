@@ -8,6 +8,7 @@ import { AiFillHome } from "react-icons/ai";
 import { FaPaintBrush } from "react-icons/fa";
 import { RiMovie2Fill } from "react-icons/ri";
 import NextLink from "next/link"; // Import NextLink for navigation to root homepage
+import { IoFitness } from "react-icons/io5";
 
 interface NavItem {
   label: string;
@@ -43,10 +44,10 @@ export default function Navbar() {
     if (!theme) {
       theme = "light"; // Default to light theme
     }
-    document.documentElement.setAttribute('data-theme', theme);
+    document.documentElement.setAttribute("data-theme", theme);
     // store selected theme in local storage etc...
   };
-  
+
   useEffect(() => {
     manualSetTheme(currentTheme);
   }, [currentTheme]);
@@ -56,7 +57,7 @@ export default function Navbar() {
     // and update 'currentTheme' to always reflect the correct theme.
     setCurrentTheme(theme === "system" ? systemTheme : theme);
   }, [theme, systemTheme]);
-  
+
   function handleLinkClick() {
     if (typeof window !== "undefined" && window.innerWidth <= 768) {
       setNavbar(!navbar);
@@ -127,6 +128,14 @@ export default function Navbar() {
                     />
                   </NextLink>
                 </div>
+                {/* <div onClick={handleLinkClick}>
+                  <NextLink href="/fitnessblog/#">
+                    <IoFitness
+                      size={30}
+                      className="text-neutral-900 dark:text-neutral-100 hover:text-neutral-500 cursor-pointer"
+                    />
+                  </NextLink>
+                </div> */}
               </div>
             ) : (
               <div className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
@@ -163,20 +172,17 @@ export default function Navbar() {
                     <RiSunLine size={25} color="black" />
                   </button>
                 ) : (
-<button
-  onClick={() => {
-    setTheme("dark");
-    manualSetTheme("dark");
-  }}
-  style={{backgroundColor: "#000000"}} 
-  className="p-2 rounded-xl"
->
-  <RiMoonFill size={25} color="white"/>
-</button>
-
+                  <button
+                    onClick={() => {
+                      setTheme("dark");
+                      manualSetTheme("dark");
+                    }}
+                    style={{ backgroundColor: "#000000" }}
+                    className="p-2 rounded-xl"
+                  >
+                    <RiMoonFill size={25} color="white" />
+                  </button>
                 )}
-
-
               </div>
             )}
           </div>
