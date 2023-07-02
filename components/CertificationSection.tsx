@@ -7,7 +7,7 @@ import { FaAws } from "react-icons/fa";
 
 const certifications = [
   {
-    name: "AWS Cloud Practitioner",
+    name: "AWS Certified Cloud Practitioner",
     description: "Course Code: CLF-C01",
     image:
       "https://demo-bucket-kap.s3.amazonaws.com/certifications/awscloudpractitioner.png",
