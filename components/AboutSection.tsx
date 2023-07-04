@@ -108,7 +108,7 @@ const AboutSection = () => {
                   justifyContent: "center",
                 }}
               >
-                <Carousel showThumbs={false} showStatus={false} width="300px">
+                {/* <Carousel showThumbs={false} showStatus={false} width="300px">
                   <div>
                     <Link href="https://www.credly.com/badges/72780e0b-d8d7-4ad5-bce5-bf4660594728/public_url">
                       <Image
@@ -121,7 +121,7 @@ const AboutSection = () => {
                       />
                     </Link>
                   </div>
-                </Carousel>
+                </Carousel> */}
               </div>
             </div>
           </div>
