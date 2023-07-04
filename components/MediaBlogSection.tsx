@@ -15,7 +15,7 @@ const media_elements = [
   {
     name: "NieR: Automata",
     description:
-      "Once again, Yoko Taro demonstrates his masterful ability to create a captivating world filled with deeply engaging characters in NieR Automata. Unlike its predecessor, Nier Replicant, this game introduces a near-perfect combat system that remains consistently enjoyable and addictive, even after the fifth playthrough. The seamless harmony between its compelling story, mesmerizing music, stunning visuals, and immersive gameplay is nothing short of extraordinary, making NieR Automata an unparalleled masterpiece within the realm of video games. Yoko Taro has proven to be the Shakespeare of the gaming medium.",
+      "Once again, Yoko Tarodemonstrates his masterful ability to create a captivating world filled with deeply engaging characters in NieR Automata. Unlike its predecessor, Nier Replicant, this game introduces a near-perfect combat system that remains consistently enjoyable and addictive, even after the fifth playthrough. The seamless harmony between its compelling story, mesmerizing music, stunning visuals, and immersive gameplay is nothing short of extraordinary, making NieR Automata an unparalleled masterpiece within the realm of video games. Yoko Taro has proven to be the Shakespeare of the gaming medium.",
     image: "https://demo-bucket-kap.s3.amazonaws.com/mediablog/nieraut.jpg",
     rating: (
       <div
