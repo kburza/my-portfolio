@@ -9,7 +9,7 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <EducationSection />
-      <CertificationSection />
+      {/* <CertificationSection /> */}
       <ProjectsSection />
     </main>
   );

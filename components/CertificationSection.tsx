@@ -4,6 +4,7 @@ import Link from "next/link";
 import SlideUp from "./SlideUp";
 import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs";
 import { FaAws } from "react-icons/fa";
+import { SiCredly } from "react-icons/si";
 
 const certifications = [
   {
@@ -11,7 +12,7 @@ const certifications = [
     description: "Course Code: CLF-C01",
     image:
       "https://demo-bucket-kap.s3.amazonaws.com/certifications/awscloudpractitioner.png",
-    link: "https://aws.amazon.com/certification/certified-cloud-practitioner/",
+    link: "https://www.credly.com/badges/72780e0b-d8d7-4ad5-bce5-bf4660594728/public_url",
   },
 ];
 
@@ -29,14 +30,15 @@ const CertificationsSection = () => {
               <SlideUp offset="-300px 0px -300px 0px">
                 <div className="flex flex-col items-center animate-slideUpCubiBezier animation-delay-2 md:flex-col md:space-x-0">
                   <div className="md:w-1/2 relative z-10 mx-auto">
-                    <Image
-                      src={certifications.image}
-                      alt=""
-                      width={1000}
-                      height={1000}
-                      className="hover:opacity-100"
-                      style={{ maxHeight: "30em", objectFit: "contain" }}
-                    />
+                    <Link href={certifications.link}>
+                      <Image
+                        src={certifications.image}
+                        alt=""
+                        width={1000}
+                        height={1000}
+                        className="rounded-xl shadow-xl hover:opacity-70"
+                      />
+                    </Link>
                   </div>
                   <div className="mt-8 md:w-1/2 mx-auto text-center">
                     <h1 className="text-4xl font-bold mb-6">
@@ -45,19 +47,19 @@ const CertificationsSection = () => {
                     <p className="text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
                       {certifications.description}
                     </p>
-                    {/* {certifications.link && (
+                    {certifications.link && (
                       <div
                         className="flex justify-center"
                         style={{ paddingTop: "4px" }}
                       >
                         <Link href={certifications.link} target="_blank">
-                          <BsArrowUpRightSquare
+                          <SiCredly
                             size={30}
                             className="hover:-translate-y-1 transition-transform cursor-pointer"
                           />
                         </Link>
                       </div>
-                    )} */}
+                    )}
                     <div className="flex flex-row align-bottom space-x-4"></div>
                   </div>
                 </div>

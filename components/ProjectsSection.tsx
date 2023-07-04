@@ -4,6 +4,9 @@ import Link from "next/link";
 import SlideUp from "./SlideUp";
 import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs";
 import { FaAws } from "react-icons/fa";
+import { BiLogoNetlify } from "react-icons/bi";
+import { IoLogoVercel } from "react-icons/io5";
+import { IoMdGlobe } from "react-icons/io";
 
 const projects = [
   {
@@ -84,10 +87,7 @@ const projects = [
 const ProjectsSection = () => {
   return (
     <section id="projects" style={{ marginBottom: "15em" }}>
-      <h1
-        className="my-10 text-center
-font-bold text-4xl"
-      >
+      <h1 className="my-10 text-center font-bold text-4xl">
         Projects
         <hr className="w-6 h-1 mx-auto my-4 bg-gray-500 border-0 rounded"></hr>
       </h1>
@@ -96,8 +96,8 @@ font-bold text-4xl"
           return (
             <div key={idx}>
               <SlideUp offset="-300px 0px -300px 0px">
-                <div className="flex flex-col  animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-12">
-                  <div className=" md:w-1/2">
+                <div className="flex flex-col animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-12">
+                  <div className="md:w-1/2">
                     <Link href={project.link}>
                       <Image
                         src={project.image}
@@ -122,9 +122,30 @@ font-bold text-4xl"
                           />
                         </Link>
                       )}
-                      {project.name === "AWS Node Docker Demo App" ? (
+                      {project.name === "DLSTR-ML" ? (
+                        <Link href={project.link} target="_blank">
+                          <BiLogoNetlify
+                            size={30}
+                            className="hover:-translate-y-1 transition-transform cursor-pointer"
+                          />
+                        </Link>
+                      ) : project.name === "AWS Node Docker Demo App" ? (
                         <Link href={project.link} target="_blank">
                           <FaAws
+                            size={30}
+                            className="hover:-translate-y-1 transition-transform cursor-pointer"
+                          />
+                        </Link>
+                      ) : project.name === "Arashi 2.0 (WIP)" ? (
+                        <Link href={project.link} target="_blank">
+                          <IoLogoVercel
+                            size={30}
+                            className="hover:-translate-y-1 transition-transform cursor-pointer"
+                          />
+                        </Link>
+                      ) : project.name === "Arashi Art Decor" ? (
+                        <Link href={project.link} target="_blank">
+                          <IoMdGlobe
                             size={30}
                             className="hover:-translate-y-1 transition-transform cursor-pointer"
                           />
@@ -136,6 +157,7 @@ font-bold text-4xl"
                           "Secure Java Bank App",
                           "Blog",
                           "Docker Demo App",
+                          "Java SQL Database Manager",
                         ].includes(project.name) && (
                           <Link href={project.link} target="_blank">
                             <BsArrowUpRightSquare

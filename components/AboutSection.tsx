@@ -1,6 +1,10 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import { SiNextdotjs } from "react-icons/si";
+import Link from "next/link";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const skills = [
   { skill: "C" },
@@ -76,9 +80,6 @@ const AboutSection = () => {
             </p>
             <br />
             <p>
-              {/* <span className="font-bold text-teal-500">
-                BLUE BOLD
-              </span>{" "} */}
               Thank you for taking the time to get to know me a little better.
               Please feel free to explore my website and reach out to me if you
               have any questions or would like to discuss potential
@@ -99,13 +100,30 @@ const AboutSection = () => {
                 );
               })}
             </div>
-            {/* <Image
-              src="https://demo-bucket-kap.s3.amazonaws.com/certifications/awscert.png"
-              alt=""
-              width={325}
-              height={325}
-              className="hidden md:block md:relative md:bottom-4 md:left-32 md:z-0"
-            /> */}
+            <div style={{ paddingTop: "20px" }}>
+              <h1 className="text-2xl font-bold mb-6">Certifications</h1>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                }}
+              >
+                <Carousel showThumbs={false} showStatus={false} width="300px">
+                  <div>
+                    <Link href="https://www.credly.com/badges/72780e0b-d8d7-4ad5-bce5-bf4660594728/public_url">
+                      <Image
+                        src="https://demo-bucket-kap.s3.amazonaws.com/certifications/awscloudpractitioner.png"
+                        alt=""
+                        width={600}
+                        height={600}
+                        className="rounded-xl shadow-xl hover:opacity-70"
+                        style={{ paddingBottom: "40px" }}
+                      />
+                    </Link>
+                  </div>
+                </Carousel>
+              </div>
+            </div>
           </div>
         </div>
       </div>
