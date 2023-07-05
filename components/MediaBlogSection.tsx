@@ -6,6 +6,7 @@ import { AiOutlineLink } from "react-icons/ai";
 import { MdThumbUp } from "react-icons/md";
 import {
   BsArrowUpRightSquare,
+  BsGlobeAmericas,
   BsStar,
   BsStarFill,
   BsStarHalf,
@@ -244,7 +245,7 @@ const MediaBlogSection = () => {
                         style={{ paddingTop: "4px" }}
                       >
                         <Link href={media_elements.link} target="_blank">
-                          <BsArrowUpRightSquare
+                          <BsGlobeAmericas
                             size={30}
                             className="hover:-translate-y-1 transition-transform cursor-pointer"
                           />

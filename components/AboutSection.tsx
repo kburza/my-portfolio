@@ -111,14 +111,16 @@ const AboutSection = () => {
                 <Carousel showThumbs={false} showStatus={false} width="300px">
                   <div>
                     <Link href="https://www.credly.com/badges/72780e0b-d8d7-4ad5-bce5-bf4660594728/public_url">
-                      <Image
-                        src="https://demo-bucket-kap.s3.amazonaws.com/certifications/awscloudpractitioner.png"
-                        alt=""
-                        width={600}
-                        height={600}
-                        className="rounded-xl shadow-xl hover:opacity-70"
-                        style={{ paddingBottom: "40px" }}
-                      />
+                      <div>
+                        <Image
+                          src="https://demo-bucket-kap.s3.amazonaws.com/certifications/awscloudpractitioner.png"
+                          alt=""
+                          width={600}
+                          height={600}
+                          className="rounded-xl shadow-xl hover:opacity-70"
+                          style={{ paddingBottom: "40px" }}
+                        />
+                      </div>
                     </Link>
                   </div>
                   <></>
