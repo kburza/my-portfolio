@@ -110,7 +110,10 @@ const AboutSection = () => {
               >
                 <Carousel showThumbs={false} showStatus={false} width="300px">
                   <div>
-                    <Link href="https://www.credly.com/badges/72780e0b-d8d7-4ad5-bce5-bf4660594728/public_url">
+                    <Link
+                      href="https://www.credly.com/badges/72780e0b-d8d7-4ad5-bce5-bf4660594728/public_url"
+                      target="_blank"
+                    >
                       <div>
                         <Image
                           src="https://demo-bucket-kap.s3.amazonaws.com/certifications/awscloudpractitioner.png"
