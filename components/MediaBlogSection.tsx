@@ -162,7 +162,7 @@ const media_elements = [
   {
     name: "Mother 3",
     description:
-      "Since it was never localized, not many outside of Japan got to experience this heartwarming (and at times, soul-crushing) tale. Once you get past the 'quirky' off-beat moments of Shigesato Itoi's slighlty cringe sense of humour, the story and characters really manage to your soul. At the end of it, I was sobbing on the couch like a baby. Everyone I talk to is sick of hearing about this game.",
+      "Since it was never localized, not many outside of Japan got to experience this heartwarming (and at times, soul-crushing) tale. Once you get past the 'quirky' off-beat moments of Shigesato Itoi's slighlty cringe sense of humour, the story and characters really manage to touch your soul. At the end of it, I was sobbing on the couch like a baby. Everyone I talk to is sick of hearing about this game.",
     image: "https://demo-bucket-kap.s3.amazonaws.com/mediablog/mother3.jpg",
     rating: (
       <div
