@@ -20,17 +20,10 @@ interface TimelineItemProps {
 
 const steps = [
   {
-    title: "Inside Technical Sales",
-    addinfo: "FEA-Training Consultants",
+    title: "FEA-TC",
+    addinfo: "Inside Technical Sales",
     description: "July. 2023 — Present | Toronto, Ontario",
     content: [
-      // {
-      //   title: "Responsibilties:",
-      //   subtitles: [
-      //     "Graduated with a Cumulative GPA of 3.17/4.33",
-      //     "2021-2022 (3rd year) and 2022-2023 (4th Year) Dean’s List in the Faculty of Engineering and Architectural Science",
-      //   ],
-      // },
       {
         title: "Accomplishments:",
         subtitles: [
@@ -42,8 +35,8 @@ const steps = [
     ],
   },
   {
-    title: "Front End Web Developer",
-    addinfo: "D Cubed Solid Consultants Inc.",
+    title: "D-Cubed Solid Consultants Inc.",
+    addinfo: "Front End Web Developer",
     description: "June 2021 — August 2021 | Oakville, Ontario",
     content: [
       {
@@ -53,18 +46,11 @@ const steps = [
           "Ensured website compatibility across multiple devices by implementing an extensive CSS codebase optimized for both desktop and mobile access",
         ],
       },
-      // {
-      //   title: "X:",
-      //   subtitles: [
-      //     "X",
-      //     "X",
-      //   ],
-      // },
     ],
   },
   {
-    title: "Assistant Contractor",
-    addinfo: "Storm Construction Inc.",
+    title: "Storm Construction Inc.",
+    addinfo: "Assistant Contractor",
     description: "2015 - Present | Ontario, Canada",
     content: [
       {
