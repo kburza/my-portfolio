@@ -30,6 +30,7 @@ const skills = [
   { skill: "Docker" },
   { skill: "AWS" },
   { skill: "SOLIDWORKS" },
+  { skill: "Sales" },
 ];
 
 const AboutSection = () => {
