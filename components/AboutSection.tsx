@@ -127,6 +127,40 @@ const AboutSection = () => {
                       </div>
                     </Link>
                   </div>
+                  <div>
+                    <Link
+                      href="https://university.solidworks.com/#/catalog/course:1259052"
+                      target="_blank"
+                    >
+                      <div>
+                        <Image
+                          src="https://demo-bucket-kap.s3.amazonaws.com/certifications/SW_badge.png"
+                          alt=""
+                          width={279}
+                          height={277}
+                          className="rounded-xl shadow-xl hover:opacity-70"
+                          style={{ paddingBottom: "40px" }}
+                        />
+                      </div>
+                    </Link>
+                  </div>
+                  <div>
+                    <Link
+                      href="https://university.solidworks.com/#/catalog/course:24463"
+                      target="_blank"
+                    >
+                      <div>
+                        <Image
+                          src="https://demo-bucket-kap.s3.amazonaws.com/certifications/SW_badge.png"
+                          alt=""
+                          width={279}
+                          height={277}
+                          className="rounded-xl shadow-xl hover:opacity-70"
+                          style={{ paddingBottom: "40px" }}
+                        />
+                      </div>
+                    </Link>
+                  </div>
                   <></>
                 </Carousel>
               </div>
