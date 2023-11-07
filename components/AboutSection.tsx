@@ -138,7 +138,7 @@ const AboutSection = () => {
                           alt=""
                           width={279}
                           height={277}
-                          className="rounded-xl shadow-xl hover:opacity-70"
+                          className="rounded-xl hover:opacity-70"
                           style={{ paddingBottom: "40px" }}
                         />
                       </div>
@@ -155,7 +155,7 @@ const AboutSection = () => {
                           alt=""
                           width={279}
                           height={277}
-                          className="rounded-xl shadow-xl hover:opacity-70"
+                          className="rounded-xl hover:opacity-70"
                           style={{ paddingBottom: "40px" }}
                         />
                       </div>
