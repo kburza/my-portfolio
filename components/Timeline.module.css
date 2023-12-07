@@ -13,7 +13,7 @@
   margin-bottom: 40px;
   color: var(--color-text);
 }
-  
+
 /* ROADMAP ITEM */
 .container-item::before {
   border-color: var(--color-border);
@@ -25,9 +25,9 @@
   position: absolute;
   content: "";
 }
-  
-  .container-item::after {
-    border-image: linear-gradient(
+
+.container-item::after {
+  border-image: linear-gradient(
       0deg,
       var(--color-border) 0%,
       var(--color-border) 30%,
@@ -35,146 +35,147 @@
       var(--color-border) 100%
     )
     1;
-    left: 0;
-    border-left-width: 3px;
-    border-left-style: solid;
-    top: 45px;
-    height: calc(100% - 45px);
-    right: auto;
-    position: absolute;
-    content: "";
-  }
-  
-  .container-item {
-    position: relative;
-    padding-bottom: 30px;
-    color: var(--color-text);
-    width: 100%;
-    border-radius: 5px;
-    position: relative;
-    padding-left: 1rem;
-  }
-  
-  .container-content-item {
-    margin-left: 0;
-    border: none;
-    padding-top: 0;
-    padding-right: 25px;
-    padding-left: 25px;
-    max-width: 100%;
-  }
-  
-  .container-content-header {
-    padding-right: 0;
-    margin-bottom: 0;
-    line-height: 1.6;
+  left: 0;
+  border-left-width: 3px;
+  border-left-style: solid;
+  top: 45px;
+  height: calc(100% - 45px);
+  right: auto;
+  position: absolute;
+  content: "";
+}
+
+.container-item {
+  position: relative;
+  padding-bottom: 30px;
+  color: var(--color-text);
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.container-content-item {
+  margin-left: 0;
+  border: none;
+  padding-top: 0;
+  padding-right: 25px;
+  padding-left: 25px;
+  max-width: 100%;
+}
+
+.container-content-header {
+  padding-right: 0;
+  margin-bottom: 0;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-content-header-time {
+  color: var(--color-text);
+  width: 100%;
+  font-weight: 700;
+  font-size: 1.5rem;
+  position: relative;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+
+.container-content-header-time::before {
+  background-color: var(--color-text);
+  bottom: -20px;
+  width: 50px;
+  height: 50px;
+  margin-left: -72px;
+  margin-top: -13.5px;
+  position: absolute;
+  content: "";
+  left: 8px;
+  border-radius: 100%;
+}
+
+.container-content-header-time::after {
+  content: none; /* Remove the counter */
+}
+
+@media screen and (min-width: 768px) {
+  .container-roadMap {
+    width: 85%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-  }
-  
-  .container-content-header-time {
-    color: var(--color-text);
-    width: 100%;
-    font-weight: 700;
-    font-size: 1.5rem;
-    position: relative;
-    line-height: 25px;
-    text-transform: uppercase;
-  }
-  
-  .container-content-header-time::before {
-    background-color: var(--color-text);
-    bottom: -20px;
-    width: 50px;
-    height: 50px;
-    margin-left: -72px;
-    margin-top: -13.5px;
-    position: absolute;
-    content: "";
-    left: 8px;
-    border-radius: 100%;
-  }
-  
-  .container-content-header-time::after {
-  content: none; /* Remove the counter */
-  }
-  
-  @media screen and (min-width: 768px) {
-    .container-roadMap {
-      width: 85%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      counter-reset: contador;
-      margin: 3rem auto;
-      padding-left: 1.5rem;
-      padding-right: 0rem;
-    }
-  
-    .container-item {
-      padding-left: 3rem;
-    }
-  
-    .container-content-header-time::before {
-      left: -24px;
-    }
-  
-    .container-content-header-time::after {
-      left: -84px;
-    }
-  }
-  
-  .container-roadmap-items {
-    counter-increment: contador;
-  }
-  
-  .container-content-header-title {
-    padding-top: 5px;
-    display: inline-block;
-    font-size: 1rem;
-    font-weight: 500;
-    line-height: 1.6;
-    color: rgba(var(--color-text), 0.9);
-  }
-  
-  .container-content-list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  
-  .li-outside {
-    list-style: none;
-    padding: 8px 0;
-    position: relative;
-  color: var(--color-text);
-    font-size: 1.2rem;
-    line-height: 1.86;
-    font-weight: 700;
-  }
-  .li-inside {
-    color: #808080;
-  }
-  
-  .contcont {
-    display: flex;
-    flex-direction: row;
-    color: #808080;
-    font-size: 1rem;
-    margin-left: 20px;
+    justify-content: center;
+    align-items: center;
+    counter-reset: contador;
+    margin: 3rem auto;
+    padding-left: 1.5rem;
+    padding-right: 0rem;
   }
 
-  .container-item:last-child::after {
-    border-image: linear-gradient(
-        0deg,
-        var(--color-text) 0%, /* Changed the red color to white */
-        var(--color-text) 30%, /* Changed the red color to white */
-        var(--color-text) 70%, /* Changed the red color to white */
-        var(--color-text) 100%, /* Changed the red color to white */
-        transparent 10% /* Add transparent color at the end */
-      )
-      1;
-    visibility: hidden;
+  .container-item {
+    padding-left: 3rem;
+  }
+
+  .container-content-header-time::before {
+    left: -24px;
+  }
+
+  .container-content-header-time::after {
+    left: -84px;
+  }
+}
+
+.container-roadmap-items {
+  counter-increment: contador;
+}
+
+.container-content-header-title {
+  padding-top: 5px;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.6;
+  color: rgba(var(--color-text), 0.9);
+}
+
+.container-content-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.li-outside {
+  list-style: none;
+  padding: 8px 0;
+  position: relative;
+  color: var(--color-text);
+  font-size: 1.2rem;
+  line-height: 1.86;
+  font-weight: 700;
+}
+.li-inside {
+  color: #808080;
+}
+
+.contcont {
+  display: flex;
+  flex-direction: row;
+  color: #808080;
+  font-size: 1rem;
+  margin-left: 20px;
+}
+
+.container-item:last-child::after {
+  border-image: linear-gradient(
+      0deg,
+      var(--color-text) 0%,
+      /* Changed the red color to white */ var(--color-text) 30%,
+      /* Changed the red color to white */ var(--color-text) 70%,
+      /* Changed the red color to white */ var(--color-text) 100%,
+      /* Changed the red color to white */ transparent 10%
+        /* Add transparent color at the end */
+    )
+    1;
+  visibility: hidden;
 }

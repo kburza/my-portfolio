@@ -76,15 +76,15 @@ const projects = [
     github: "https://github.com/kburza/cyclone-v-fpga-media-center",
     link: "https://github.com/kburza/cyclone-v-fpga-media-center",
   },
-  {
-    name: "Blog",
-    description:
-      "Check out the art and designs that I work on in service of projects or just as a hobby. Also, view my opinions on the various media that I consume in my spare time.",
-    image:
-      "https://demo-bucket-kap.s3.amazonaws.com/my-portfolio-projects-assets/my-portfolio-projects-assets/art.png",
-    github: "",
-    link: "/artblog/#",
-  },
+  // {
+  //   name: "Blog",
+  //   description:
+  //     "Check out the art and designs that I work on in service of projects or just as a hobby. Also, view my opinions on the various media that I consume in my spare time.",
+  //   image:
+  //     "https://demo-bucket-kap.s3.amazonaws.com/my-portfolio-projects-assets/my-portfolio-projects-assets/art.png",
+  //   github: "",
+  //   link: "/artblog/#",
+  // },
 ];
 
 const ProjectsSection = () => {
