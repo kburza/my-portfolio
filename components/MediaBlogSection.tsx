@@ -14,6 +14,98 @@ import {
 
 const media_elements = [
   {
+    name: "Bloodborne",
+    description:
+      "After leaving FEA-Training Consultants and recovering from surgery, I found myself with time on my hands. Amidst the slowdown of life and the approaching holidays, I rediscovered Bloodborne, a game I initially found overwhelming when I had picked it up at its launch in 2015. Fast forward to today, in a period where I seem to have almost no control over the htings happening around me, the challenging nature of Bloodborne became oddly comforting. As I carved my path rhouhg the game's overworld, I regained tat lost sense of control, in a way. Many online share this sentiment, finding accomplishment in overcoming its difficulty. As someone drawn to immersive experiences, Bloodborne's insane levels of creativity stuck with me, and I had been thinking of the game's world, Yharnam for the past 8 years, it simply wouldn't ;eave my head. Though I faced minor issues here and there, such as the 'cheap' difficulty (especially in the NPCs) and the obscure lore, the overall journey was still deeply satisfying. In a way, Bloodborne became a strong source of solace during a time when little else seemed to work as expected, and I'm excited to see wher the backlog takes me next. As of right now, I can't put the game down and I can't wait to get into the DLC in the coming days.",
+    image: "https://demo-bucket-kap.s3.amazonaws.com/mediablog/bloodborne.jpg",
+    date: "12/06/2023",
+    rating: (
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <BsStarFill style={{ marginRight: "2px" }} />
+        <BsStarFill style={{ marginRight: "2px" }} />
+        <BsStarFill style={{ marginRight: "2px" }} />
+        <BsStarFill style={{ marginRight: "2px" }} />
+        <BsStarHalf style={{ marginRight: "2px" }} />
+      </div>
+    ),
+    link: "https://www.playstation.com/en-ca/games/bloodborne/",
+  },
+  {
+    name: "Pluto",
+    description:
+      "As I grew accustomed to my new sales job, the year became busier, and I wanted a small escape that wouldn't require too much dedication, which brought me to Pluto. My primary concern with Monster was its pacing, and it made me doubt Urasawa's skills towards character-driven storytelling as a result. To my surprise, he was able to properly develop the characters in a mere 8 volumes, delving into profound questions of morality, humanity, and good versus evil while unfolding a captivating murder mystery. As a complete sucker for murder mysteries, I found this to be a perfect narrative to keep me captivated to the very end. The only drawback in Pluto lies in occasional 'silly-looking' character designs, but it DOES keep true to the source material that builds upon the world and lore of Astro Boy.",
+    image: "https://demo-bucket-kap.s3.amazonaws.com/mediablog/pluto.png",
+    date: "10/15/2023",
+    rating: (
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <BsStarFill style={{ marginRight: "2px" }} />
+        <BsStarFill style={{ marginRight: "2px" }} />
+        <BsStarFill style={{ marginRight: "2px" }} />
+        <BsStarFill style={{ marginRight: "2px" }} />
+        <BsStar style={{ marginRight: "2px" }} />
+      </div>
+    ),
+    link: "https://www.viz.com/pluto-urasawa-x-tezuka",
+  },
+  {
+    name: "Bomb Rush Cyberfunk",
+    description:
+      "I'm always drawn to games that make the bold decision of using low-poly textures and allowing the gameplay to speak for itself (much like Risk of Rain 2). Bomb Rush pulls no punhces in this regard, and has one of the best simplistic art styles in a game I have ever seen. Its story was impressively impactful with its own twists, turns, and stand-out character moments. My one gripe was with the performance, as I was mainly playing it on the switch ('unleash the beast' performance mode). Additionally, many of the areas in the game felt same-y and it was easy to get lost from time to time. Overall, the game was just dumb fun, nothing to overthink here. The gameplay loop was near perfect and the art style was something that hasn't been re-captured properly since the GameCube and Sega Dreamcast eras. I'd recommend this to anyone looking for a short, fun early 2000s nostalgic gaming experience.",
+    image: "https://demo-bucket-kap.s3.amazonaws.com/mediablog/brcf.png",
+    date: "09/10/2023",
+    rating: (
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <BsStarFill style={{ marginRight: "2px" }} />
+        <BsStarFill style={{ marginRight: "2px" }} />
+        <BsStarFill style={{ marginRight: "2px" }} />
+        <BsStarHalf style={{ marginRight: "2px" }} />
+        <BsStar style={{ marginRight: "2px" }} />
+      </div>
+    ),
+    link: "https://team-reptile.com/category/bomb-rush-cyberfunk/",
+  },
+  {
+    name: "The Legend of Zelda: Tears of the Kingdom",
+    description:
+      "Regardless of where we are in the world, my childhood friend, Anthony, and I, always circle back to our shared love for Zelda, consistently reconnecting over our nostalgic passion for the series. With the release of TOTK, we eagerly delved into the experience, particularly as Breath of the Wild, its predecessor, stood as one of our favorites in the series. The vast scale and verticality I hungered for in my dream game, partially fulfilled by BOTW, were further realized in TOTK, making it the quintessential 'open world' game. However, the 'openness' of its game design once agaion carries its caveats. The world's elements and its abundant tasks peppred throuhgout became quite repetitive, with the depths of Hyrule being particularly guilty in this regard. Additionally, the Zelda team seems to be unable to deliver a story as grand and impactful as Ocarina of Time, Wind Waker, or even Skyward Sword. This raises questions about whether the Zelda team is running low on storytelling steam or if the open-world formula isn't performing as effectively as it could. In conclusion, TOTK offers the most polished open-world experience I've encountered. Nevertheless, even the best iteration of something can't fully overcome all its faults.",
+    image: "https://demo-bucket-kap.s3.amazonaws.com/mediablog/totk.jpg",
+    date: "08/8/2023",
+    rating: (
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <BsStarFill style={{ marginRight: "2px" }} />
+        <BsStarFill style={{ marginRight: "2px" }} />
+        <BsStarFill style={{ marginRight: "2px" }} />
+        <BsStarFill style={{ marginRight: "2px" }} />
+        <BsStar style={{ marginRight: "2px" }} />
+      </div>
+    ),
+    link: "https://team-reptile.com/category/bomb-rush-cyberfunk/",
+  },
+  {
     name: "NieR: Automata",
     description:
       "Once again, Yoko Taro demonstrates his masterful ability to create a captivating world filled with deeply engaging characters in NieR Automata. Unlike its predecessor, Nier Replicant, this game introduces a near-perfect combat system that remains consistently enjoyable and addictive, even after the fifth playthrough. The seamless harmony between its compelling story, mesmerizing music, stunning visuals, and immersive gameplay is nothing short of extraordinary, making NieR Automata an unparalleled masterpiece within the realm of video games. Yoko Taro has proven to be the Shakespeare of the gaming medium.",
@@ -235,6 +327,9 @@ const MediaBlogSection = () => {
                     </h1>
                     <p className="text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
                       {media_elements.description}
+                    </p>
+                    <p className="text-l leading-7 mb-4 text-neutral-400 dark:text-neutral-600">
+                      {media_elements.date}
                     </p>
                     <p className="text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
                       {media_elements.rating}
