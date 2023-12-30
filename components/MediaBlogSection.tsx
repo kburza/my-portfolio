@@ -14,6 +14,25 @@ import {
 
 const media_elements = [
   {
+    name: "Bleach",
+    description:
+      "Following my departure from Canada and journey to Poland, I ran into someone on my trip who recommended Bleach to me. I've heard a lot about it in the past as it's part of 'the Big 3' of Shonen anime/manga (alongside One Piece and Naruto), none of the recommendations in the past, however, were as glowing as this one. As I normally don't watch 'slice of life' type anime, Bleach's approach is a slight breath of fresh air, and I can definitely see the influence that it has on today's narriative works in the manga space (CSM, JJK). Additionally, the music has a ton of bops that call back to early 2000s style of TV shows that my parents would buy me on VHS, Bleach overall gives off a strong 'nostalgic' vibe for me. Normally I don't write a 'review' here about something unless I complete it from beginning to end, but seeing as I have a lot of time on my hands, I wanted to get my thoughts about this series. I'm excited to see much more of Bleach going into the new year",
+    image: "https://demo-bucket-kap.s3.amazonaws.com/mediablog/bleach.jpg",
+    date: "12/30/2023",
+    rating: (
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <MdThumbUp style={{ marginRight: "2px" }} />
+      </div>
+    ),
+    link: "https://www.viz.com/bleach",
+  },
+  {
     name: "Bloodborne",
     description:
       "After leaving FEA-Training Consultants and recovering from surgery, I found myself with time on my hands. Amidst the slowdown of life and the approaching holidays, I rediscovered Bloodborne, a game I initially found overwhelming when I had picked it up at its launch in 2015. Fast forward to today, in a period where I seem to have almost no control over the htings happening around me, the challenging nature of Bloodborne became oddly comforting. As I carved my path rhouhg the game's overworld, I regained tat lost sense of control, in a way. Many online share this sentiment, finding accomplishment in overcoming its difficulty. As someone drawn to immersive experiences, Bloodborne's insane levels of creativity stuck with me, and I had been thinking of the game's world, Yharnam for the past 8 years, it simply wouldn't ;eave my head. Though I faced minor issues here and there, such as the 'cheap' difficulty (especially in the NPCs) and the obscure lore, the overall journey was still deeply satisfying. In a way, Bloodborne became a strong source of solace during a time when little else seemed to work as expected, and I'm excited to see wher the backlog takes me next. As of right now, I can't put the game down and I can't wait to get into the DLC in the coming days.",

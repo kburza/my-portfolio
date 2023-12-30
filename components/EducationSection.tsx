@@ -11,8 +11,6 @@ interface Step {
   description: string;
   addinfo: string;
   content: Subtitle[];
-  transcriptLink?: string;
-  diplomaLink?: string;
 }
 
 interface TimelineItemProps {
