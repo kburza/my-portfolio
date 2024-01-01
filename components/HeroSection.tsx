@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import Image from "next/image";
 import { FaAws, FaReact } from "react-icons/fa";
@@ -7,11 +7,13 @@ import { IoLogoVercel } from "react-icons/io5";
 import { Link } from "react-scroll";
 import { HiArrowDown } from "react-icons/hi";
 import { RiReactjsLine } from "react-icons/ri";
-import { TiArrowSortedDown } from 'react-icons/ti';
+import { TiArrowSortedDown } from "react-icons/ti";
 
 const HeroSection = () => {
   const resumeUrl =
     "https://demo-bucket-kap.s3.amazonaws.com/Kacper_Burza_Resume_2023.pdf";
+  const resumeUrl_pl =
+    "https://demo-bucket-kap.s3.amazonaws.com/Kacper_Burza_Resume_2023_pl.pdf";
 
   return (
     <section id="home">
@@ -40,10 +42,20 @@ const HeroSection = () => {
             href={resumeUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-neutral-100 font-semibold px-6 py-3 bg-gray-600 rounded shadow hover:bg-gray-700"
+            className="text-neutral-100 font-semibold px-6 py-3 bg-gray-600 rounded shadow hover:bg-gray-700 padding-right: 20px"
             download
           >
             Resume
+          </a>
+          <a> </a>
+          <a
+            href={resumeUrl_pl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-neutral-100 font-semibold px-6 py-3 bg-gray-600 rounded shadow hover:bg-gray-700"
+            download
+          >
+            CV (PL)
           </a>
           <p className="text-sm text-gray-500 mt-4 mb-6 md:text-base">
             Site Langauges: <RiReactjsLine className="inline text-primary" />{" "}
@@ -68,7 +80,6 @@ const HeroSection = () => {
           <TiArrowSortedDown size={35} className="animate-bounce" />
         </Link>
       </div>
-      
     </section>
   );
 };
