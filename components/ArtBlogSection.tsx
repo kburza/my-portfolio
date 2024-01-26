@@ -12,6 +12,12 @@ const ThreeD = dynamic(() => import("@/public/artblog/3D/ThreeD"), {
 
 const art_elements = [
   {
+    name: "Flower Drawing",
+    description:
+      "Drawing of Lillies of the Valley. Celebratory gift/event for relative January 2024",
+    image: "https://demo-bucket-kap.s3.amazonaws.com/artblog/lily.png",
+  },
+  {
     name: "Arashi Business Card (Front)",
     description:
       "Front design of Arashi Art Decor's business card. The marketing material features a color palette that mactehs the website's design as well as a composite promotional image of a wood resin table.",
