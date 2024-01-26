@@ -22,6 +22,8 @@ const skills = [
   { skill: "Git" },
   { skill: "Node.js" },
   { skill: "React.js" },
+  { skill: "Angular" },
+  { skill: "Firebase" },
   { skill: "Python" },
   { skill: "Next.js" },
   { skill: "Three.js" },

@@ -10,6 +10,7 @@ import {
 import { FaAws } from "react-icons/fa";
 import { IoLogoVercel } from "react-icons/io5";
 import { BiLogoNetlify } from "react-icons/bi";
+import { FaAngular } from "react-icons/fa";
 
 const projects = [
   {
@@ -21,6 +22,15 @@ const projects = [
     github:
       "https://github.com/ncheungg/DEEP-LEARNING-SECURITY-TOOLS-REPOSITORY",
     link: "https://rsa02.netlify.app/",
+  },
+  {
+    name: "Chatsper: Chat App (WIP)",
+    description:
+      "Private chat app built through the angular framework using firebase implementation to securely store user login information.",
+    image:
+      "https://demo-bucket-kap.s3.amazonaws.com/my-portfolio-projects-assets/my-portfolio-projects-assets/chatsper.png",
+    github: "https://github.com/kburza/ang-chat-app",
+    link: "https://kburza.github.io/ang-chat-app/",
   },
   {
     name: "Arashi 2.0 (WIP)",
@@ -127,6 +137,14 @@ font-bold text-4xl"
                         />
                       </Link>
                     )}
+                    {project.name === "Chatsper: Chat App (WIP)" && (
+                      <Link href={project.link} target="_blank">
+                        <FaAngular
+                          size={30}
+                          className="hover:-translate-y-1 transition-transform cursor-pointer"
+                        />
+                      </Link>
+                    )}
                     {project.name === "AWS Node Docker Demo App" ? (
                       <Link href={project.link} target="_blank">
                         <FaAws
@@ -157,6 +175,7 @@ font-bold text-4xl"
                         "Docker Demo App",
                         "AWS Node Docker Demo App",
                         "Java SQL Database Manager",
+                        "Chatsper: Chat App (WIP)",
                       ].includes(project.name) && (
                         <Link href={project.link} target="_blank">
                           <BsGlobeAmericas
