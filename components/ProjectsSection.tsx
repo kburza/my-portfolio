@@ -24,7 +24,7 @@ const projects = [
     link: "https://rsa02.netlify.app/",
   },
   {
-    name: "Chatsper: Chat App (WIP)",
+    name: "Chatsper: Chat App (Alpha)",
     description:
       "Private chat app built through the angular framework using firebase implementation to securely store user login information.",
     image:
