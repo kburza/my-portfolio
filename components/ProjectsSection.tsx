@@ -137,7 +137,7 @@ font-bold text-4xl"
                         />
                       </Link>
                     )}
-                    {project.name === "Chatsper: Chat App (WIP)" && (
+                    {project.name === "Chatsper: Chat App (Alpha)" && (
                       <Link href={project.link} target="_blank">
                         <FaAngular
                           size={30}
@@ -175,7 +175,7 @@ font-bold text-4xl"
                         "Docker Demo App",
                         "AWS Node Docker Demo App",
                         "Java SQL Database Manager",
-                        "Chatsper: Chat App (WIP)",
+                        "Chatsper: Chat App (Alpha)",
                       ].includes(project.name) && (
                         <Link href={project.link} target="_blank">
                           <BsGlobeAmericas
