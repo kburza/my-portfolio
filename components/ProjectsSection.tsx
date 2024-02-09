@@ -26,7 +26,7 @@ const projects = [
   {
     name: "Chatsper: Chat App (Alpha)",
     description:
-      "Private chat app built through the angular framework using firebase implementation to securely store user login information.",
+      "Private chat app built through the angular framework using firebase implementation to securely store user login information. Cryptography implementation included.",
     image:
       "https://demo-bucket-kap.s3.amazonaws.com/my-portfolio-projects-assets/my-portfolio-projects-assets/chatsper.png",
     github: "https://github.com/kburza/ang-chat-app",
