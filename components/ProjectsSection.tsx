@@ -42,9 +42,9 @@ const projects = [
     link: "https://arashi-furniture2.vercel.app/",
   },
   {
-    name: "Python SQL Database Manager",
+    name: "Python SQL Database Manager (WIP)",
     description:
-      "Python script running with local MySQL server connector implementation. Used to create/store/manipulate SQL databases.",
+      "Python script running with local MySQL server connector implementation. Used to create/store/manipulate SQL databases. Work in progress.",
     image:
       "https://demo-bucket-kap.s3.amazonaws.com/my-portfolio-projects-assets/my-portfolio-projects-assets/python_sql.png",
     github: "https://github.com/kburza/PythonSQLDatabase",
@@ -184,7 +184,7 @@ font-bold text-4xl"
                         "Docker Demo App",
                         "AWS Node Docker Demo App",
                         "Java SQL Database Manager w/ UI",
-                        "Python SQL Database Manager",
+                        "Python SQL Database Manager (WIP)",
                         "Chatsper: Chat App (Alpha)",
                       ].includes(project.name) && (
                         <Link href={project.link} target="_blank">
