@@ -42,6 +42,15 @@ const projects = [
     link: "https://arashi-furniture2.vercel.app/",
   },
   {
+    name: "Python SQL Database Manager",
+    description:
+      "Python script running with local MySQL server connector implementation. Used to create/store/manipulate SQL databases.",
+    image:
+      "https://demo-bucket-kap.s3.amazonaws.com/my-portfolio-projects-assets/my-portfolio-projects-assets/python_sql.png",
+    github: "https://github.com/kburza/PythonSQLDatabase",
+    link: "https://github.com/kburza/PythonSQLDatabase",
+  },
+  {
     name: "Arashi Art Decor",
     description:
       "Sleek and attractive artisan wood home decor website for Arashi Inc., based in Mississauga, Ontario",
@@ -60,7 +69,7 @@ const projects = [
     link: "http://54.147.110.7:8000/",
   },
   {
-    name: "Java SQL Database Manager",
+    name: "Java SQL Database Manager w/ UI",
     description:
       "Java applet to explore/manage SQl databases through the JDBC API. Complete with a dynamic ASCII UI and a fully realized industry-grade headphones database.",
     image:
@@ -174,7 +183,8 @@ font-bold text-4xl"
                         "Blog",
                         "Docker Demo App",
                         "AWS Node Docker Demo App",
-                        "Java SQL Database Manager",
+                        "Java SQL Database Manager w/ UI",
+                        "Python SQL Database Manager",
                         "Chatsper: Chat App (Alpha)",
                       ].includes(project.name) && (
                         <Link href={project.link} target="_blank">
