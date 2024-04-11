@@ -57,7 +57,7 @@ const projects = [
     image:
       "https://demo-bucket-kap.s3.amazonaws.com/my-portfolio-projects-assets/my-portfolio-projects-assets/ang_threejs.png",
     github: "https://github.com/kburza/ang-threejs",
-    link: "https://github.com/kburza/ang-threejs",
+    link: "https://kburza.github.io/ang-threejs/",
   },
   {
     name: "Arashi Art Decor",
