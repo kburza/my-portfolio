@@ -51,6 +51,15 @@ const projects = [
     link: "https://github.com/kburza/PythonSQLDatabase",
   },
   {
+    name: "Angular Three.js Interactive Geometry Demo (WIP)",
+    description:
+      "This project blends Angular and Three.js to craft a visually engaging 3D environment, showcasing dynamic sphere geometry illuminated with ambient lighting with built-in ctonrols.",
+    image:
+      "https://demo-bucket-kap.s3.amazonaws.com/my-portfolio-projects-assets/my-portfolio-projects-assets/ang_threejs.png",
+    github: "https://github.com/kburza/ang-threejs",
+    link: "https://github.com/kburza/ang-threejs",
+  },
+  {
     name: "Arashi Art Decor",
     description:
       "Sleek and attractive artisan wood home decor website for Arashi Inc., based in Mississauga, Ontario",
