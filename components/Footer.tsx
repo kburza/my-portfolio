@@ -16,7 +16,7 @@ const Footer = () => {
           © 2023 Kacper Burza<a href="/" className="hover:underline"></a>
         </div>
         <div className="flex flex-row items-center justify-center space-x-2 mb-1">
-          <a
+          {/* <a
             href="https://www.facebook.com/kacper.burza/"
             rel="noreferrer"
             target="_blank"
@@ -25,7 +25,7 @@ const Footer = () => {
               className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100"
               size={30}
             />
-          </a>
+          </a> */}
 
           <a href="https://github.com/kburza" rel="noreferrer" target="_blank">
             <AiOutlineGithub
@@ -34,7 +34,7 @@ const Footer = () => {
             />
           </a>
 
-          <a
+          {/* <a
             href="https://www.instagram.com/kap_bur/"
             rel="noreferrer"
             target="_blank"
@@ -43,7 +43,7 @@ const Footer = () => {
               className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100"
               size={30}
             />
-          </a>
+          </a> */}
 
           <a
             href="https://www.linkedin.com/in/kacper-burza/"
