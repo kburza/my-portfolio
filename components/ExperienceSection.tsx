@@ -20,9 +20,24 @@ interface TimelineItemProps {
 
 const steps = [
   {
+    title: "CanDeal",
+    addinfo: "Enterprise Technology Intern",
+    description: "June. 2024 — Present | Toronto, Ontario",
+    content: [
+      {
+        title: "Details:",
+        subtitles: [
+          "Developed a secure, full-stack internal tool for user functions, leveraging Next.js and FastAPI for an efficient application",
+          "Utilized AWS, Microsoft Azure, and Docker on a Linux distribution to package and deploy the application",
+          "Collaborated effectively within a team, using Git commands to manage code in an Azure repository",
+        ],
+      },
+    ],
+  },
+  {
     title: "FEA-TC",
     addinfo: "Inside Technical Sales",
-    description: "July. 2023 — Present | Toronto, Ontario",
+    description: "July. 2023 — January 2024 | Mississauga, Ontario",
     content: [
       {
         title: "Accomplishments:",
@@ -48,20 +63,20 @@ const steps = [
       },
     ],
   },
-  {
-    title: "Storm Construction Inc.",
-    addinfo: "Assistant Contractor",
-    description: "2015 - Present | Ontario, Canada",
-    content: [
-      {
-        title: "Accomplishments:",
-        subtitles: [
-          "Managed 40+ construction projects from onset to completion, delivering high-quality work and earning a reputation for dependability and professionalism",
-          "Coordinated with clients, architects, engineers, and subcontractors to deliver projects on time and within budget, while providing excellent customer service",
-        ],
-      },
-    ],
-  },
+  // {
+  //   title: "Storm Construction Inc.",
+  //   addinfo: "Assistant Contractor",
+  //   description: "2015 - Present | Ontario, Canada",
+  //   content: [
+  //     {
+  //       title: "Accomplishments:",
+  //       subtitles: [
+  //         "Managed 40+ construction projects from onset to completion, delivering high-quality work and earning a reputation for dependability and professionalism",
+  //         "Coordinated with clients, architects, engineers, and subcontractors to deliver projects on time and within budget, while providing excellent customer service",
+  //       ],
+  //     },
+  //   ],
+  // },
 ];
 
 const TimelineItem: React.FC<TimelineItemProps> = ({ data, index }) => {

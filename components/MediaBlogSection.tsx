@@ -14,6 +14,158 @@ import {
 
 const media_elements = [
   {
+    name: "Vagabond",
+    description: " ",
+    image: "https://demo-bucket-kap.s3.amazonaws.com/mediablog/vagabond.jpg",
+    date: "2024",
+    rating: (
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <BsStarFill style={{ marginRight: "2px" }} />
+        <BsStarFill style={{ marginRight: "2px" }} />
+        <BsStarFill style={{ marginRight: "2px" }} />
+        <BsStarFill style={{ marginRight: "2px" }} />
+        <BsStarHalf style={{ marginRight: "2px" }} />
+      </div>
+    ),
+    link: "https://www.viz.com/vagabond",
+  },
+  {
+    name: "Deftones: Around the Fur",
+    description: " ",
+    image:
+      "https://demo-bucket-kap.s3.amazonaws.com/mediablog/deftonesaroundthefur.jpg",
+    date: "2024",
+    rating: (
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <MdThumbUp style={{ marginRight: "2px" }} />
+      </div>
+    ),
+    link: "https://music.apple.com/us/album/around-the-fur/1099843198",
+  },
+  {
+    name: "Soul Eater",
+    description: " ",
+    image: "https://demo-bucket-kap.s3.amazonaws.com/mediablog/souleater.jpg",
+    date: "2024",
+    rating: (
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <BsStarFill style={{ marginRight: "2px" }} />
+        <BsStarFill style={{ marginRight: "2px" }} />
+        <BsStarHalf style={{ marginRight: "2px" }} />
+        <BsStar style={{ marginRight: "2px" }} />
+        <BsStar style={{ marginRight: "2px" }} />
+      </div>
+    ),
+    link: "https://www.crunchyroll.com/series/GYX0ZW80R/soul-eater",
+  },
+  {
+    name: "Delicious in Dungeon",
+    description: " ",
+    image:
+      "https://demo-bucket-kap.s3.amazonaws.com/mediablog/dungeonmeshi.jpg",
+    date: "2024",
+    rating: (
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <BsStarFill style={{ marginRight: "2px" }} />
+        <BsStarFill style={{ marginRight: "2px" }} />
+        <BsStarFill style={{ marginRight: "2px" }} />
+        <BsStarHalf style={{ marginRight: "2px" }} />
+        <BsStar style={{ marginRight: "2px" }} />
+      </div>
+    ),
+    link: "https://www.netflix.com/ca/title/81564899",
+  },
+  {
+    name: "SPY x Family",
+    description: " ",
+    image: "https://demo-bucket-kap.s3.amazonaws.com/mediablog/spyfamily.jpg",
+    date: "2024",
+    rating: (
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <BsStarFill style={{ marginRight: "2px" }} />
+        <BsStarFill style={{ marginRight: "2px" }} />
+        <BsStarFill style={{ marginRight: "2px" }} />
+        <BsStarHalf style={{ marginRight: "2px" }} />
+        <BsStar style={{ marginRight: "2px" }} />
+      </div>
+    ),
+    link: "https://www.crunchyroll.com/series/G4PH0WXVJ/spy-x-family",
+  },
+  {
+    name: "Frieren: Beyond a Journey's End",
+    description: " ",
+    image: "https://demo-bucket-kap.s3.amazonaws.com/mediablog/frieren.jpg",
+    date: "2024",
+    rating: (
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <BsStarFill style={{ marginRight: "2px" }} />
+        <BsStarFill style={{ marginRight: "2px" }} />
+        <BsStarFill style={{ marginRight: "2px" }} />
+        <BsStarHalf style={{ marginRight: "2px" }} />
+        <BsStar style={{ marginRight: "2px" }} />
+      </div>
+    ),
+    link: "https://www.crunchyroll.com/series/GG5H5XQX4/frieren-beyond-journeys-end",
+  },
+  {
+    name: "Jujustu Kaisen",
+    description: " ",
+    image: "https://demo-bucket-kap.s3.amazonaws.com/mediablog/jjk.jpg",
+    date: "2024",
+    rating: (
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <BsStarFill style={{ marginRight: "2px" }} />
+        <BsStarFill style={{ marginRight: "2px" }} />
+        <BsStarFill style={{ marginRight: "2px" }} />
+        <BsStar style={{ marginRight: "2px" }} />
+        <BsStar style={{ marginRight: "2px" }} />
+      </div>
+    ),
+    link: "https://www.crunchyroll.com/series/GRDV0019R/jujutsu-kaisen",
+  },
+  {
     name: "Bleach",
     description:
       "Following my departure from Canada and journey to Poland, I ran into someone on my trip who recommended Bleach to me. I've heard a lot about it in the past as it's part of 'the Big 3' of Shonen anime/manga (alongside One Piece and Naruto), none of the recommendations in the past, however, were as glowing as this one. As I normally don't watch 'slice of life' type anime, Bleach's approach is a slight breath of fresh air, and I can definitely see the influence that it has on today's narriative works in the manga space (CSM, JJK). Additionally, the music has a ton of bops that call back to early 2000s style of TV shows that my parents would buy me on VHS, Bleach overall gives off a strong 'nostalgic' vibe for me. Normally I don't write a 'review' here about something unless I complete it from beginning to end, but seeing as I have a lot of time on my hands, I wanted to get my thoughts about this series. I'm excited to see much more of Bleach going into the new year",
