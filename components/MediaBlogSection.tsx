@@ -59,7 +59,7 @@ const media_elements = [
   {
     name: "Deftones: Around the Fur",
     description:
-      "This album navigates between two distinct sonic modes: intense walls of noise driven by blaring guitars and raw, screaming vocals, and melancholic choruses with hypnotic melodies accompanied by a soothing, almost ethereal voice. Both styles are masterfully executed by Chino Moreno, whose versatility brings the dynamic range of emotions to life. Standout tracks like 'Be Quiet and Drive' and 'Lhabia' perfectly encapsulate the blend of aggression and introspection. It’s the ideal soundtrack for the gym, helping you lock in and push through challenges with its powerful energy and emotional depth. Deftones' *Around the Fur* is a testament to the band’s ability to create a visceral, immersive experience.",
+      "This album navigates between two distinct sonic modes: intense walls of noise driven by blaring guitars and raw, screaming vocals, and melancholic choruses with hypnotic melodies accompanied by a soothing, almost ethereal voice. Both styles are masterfully executed by Chino Moreno, whose versatility brings the dynamic range of emotions to life. Standout tracks like 'Be Quiet and Drive' and 'Lhabia' perfectly encapsulate the blend of aggression and introspection. It’s the ideal soundtrack for the gym, helping you lock in and push through challenges with its powerful energy and emotional depth. Deftones' Around the Fur is a testament to the band’s ability to create a visceral, immersive experience.",
     image:
       "https://demo-bucket-kap.s3.amazonaws.com/mediablog/deftonesaroundthefur.jpg",
     date: "10/01/2024",
@@ -101,7 +101,7 @@ const media_elements = [
   {
     name: "Delicious in Dungeon",
     description:
-      "I never expected a gimmicky cooking to hook me, but this show did just that. It’s a fun blend of adventure and creativity, much like Spy x Family surprised me. Now, I can't wait for the second season— it's very simple, entertaining, and unexpectedly heartwarming.",
+      "I never expected a gimmicky cooking anime to hook me, but this show did just that. It’s a fun blend of adventure and creativity, much like Spy x Family, which had greatly surprised me. Now, I can't wait for the second season— it's very simple, entertaining, and unexpectedly heartwarming.",
     image:
       "https://demo-bucket-kap.s3.amazonaws.com/mediablog/dungeonmeshi.jpg",
     date: "10/01/2024",
