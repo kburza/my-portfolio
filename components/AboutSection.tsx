@@ -45,7 +45,7 @@ const AboutSection = () => {
         </h1>
 
         <div className="flex flex-col space-y-10 items-stretch justify-center align-top md:space-x-10 md:space-y-0 md:p-4 md:flex-row md:text-left">
-          <div className="md:w-1/2 ">
+          <div className="md:w-1/2">
             <h1 className="text-center text-2xl font-bold mb-6 md:text-left">
               Information
             </h1>
@@ -58,37 +58,56 @@ const AboutSection = () => {
                 }
               </span>
               , (formerly known as Ryerson University) located in Ontario,
-              Canada. I am passionate about all things related to software
-              development, and I love to create things that are both beautiful
-              and functional.
+              Canada. I am passionate about software development, with expertise
+              spanning front-end and back-end technologies, cloud computing, and
+              agile methodologies. I take pride in building functional,
+              efficient, and aesthetically pleasing applications.
             </p>
             <br />
             <p>
-              In my free time, I enjoy working on personal projects that allow
-              me to explore new technologies and experiment with different
-              programming languages. Some of my recent projects include
-              designing and programming a Deep Learning Security tools
-              repository web-app, participating in a hackathon to create a
-              pandemic relief website, and developing a game for the University
-              of Toronto GameMaker Competition.
+              I have worked on full-stack web development projects using{" "}
+              <span className="font-bold">React, Next.js, FastAPI, AWS,</span>{" "}
+              and <span className="font-bold">Microsoft Azure.</span> As an{" "}
+              <span className="font-bold">Enterprise Technology Intern</span> at{" "}
+              <span className="font-bold">CanDeal</span>, I developed a secure
+              internal tool leveraging technologies like{" "}
+              <span className="font-bold">
+                Next.js, FastAPI, AWS App Studio,
+              </span>{" "}
+              and{" "}
+              <span className="font-bold">Amazon RDS Aurora PostgreSQL</span>{" "}
+              for data management. I deployed applications using{" "}
+              <span className="font-bold">Docker</span> and collaborated with
+              teams using <span className="font-bold">Azure DevOps</span>.
             </p>
             <br />
             <p>
-              As a person, I am hardworking, detail-oriented, and always eager
-              to learn new things. I am a team player and value collaboration
-              and communication in my work. I am excited about the opportunity
-              to contribute my skills and knowledge to your organization while
-              continuing to grow and develop my expertise in software
-              development.
+              In addition to my professional experience, I have led personal
+              projects such as a{" "}
+              <span className="font-bold">
+                Deep Learning Security Tools Repository Web-App
+              </span>{" "}
+              and participated in a hackathon to create a{" "}
+              <span className="font-bold">pandemic relief website</span>. I
+              thrive in collaborative team environments, using{" "}
+              <span className="font-bold">Agile/Scrum</span> methodologies and
+              cross-functional teamwork. Fluent in both{" "}
+              <span className="font-bold">English</span> and{" "}
+              <span className="font-bold">Polish</span>, I’m proficient in a
+              range of programming languages including{" "}
+              <span className="font-bold">
+                JavaScript/TypeScript, C/C++, Python,
+              </span>{" "}
+              and <span className="font-bold">SQL</span>.
             </p>
             <br />
             <p>
-              Thank you for taking the time to get to know me a little better.
-              Please feel free to explore my website and reach out to me if you
-              have any questions or would like to discuss potential
-              collaborations.
+              Thank you for visiting my website! Feel free to explore my work,
+              and don’t hesitate to reach out if you have any questions or would
+              like to discuss potential collaborations.
             </p>
           </div>
+
           <div className="text-center md:w-1/2 md:text-left">
             <h1 className="text-2xl font-bold mb-6">Skills</h1>
             <div className="flex flex-wrap flex-row justify-center z-10 md:justify-start">

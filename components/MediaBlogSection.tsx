@@ -14,10 +14,31 @@ import {
 
 const media_elements = [
   {
+    name: "Parannould: To See the Next Part of the Dream",
+    description:
+      "This project is an unforgettable blend of rock, with walls of noise and grungy melodies that feel entirely unique. While the mixing might be rough, it adds to the raw, immersive experience that no other album replicates. I can’t imagine a day without listening to it—it’s a project that will easily go down as my most cherished and most played album of all time.",
+    image:
+      "https://demo-bucket-kap.s3.amazonaws.com/mediablog/parannoul_tstnpotd.jpg",
+    date: "10/01/2024",
+    rating: (
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <MdThumbUp style={{ marginRight: "2px" }} />
+      </div>
+    ),
+    link: "https://music.apple.com/us/album/to-see-the-next-part-of-the-dream/1563369236",
+  },
+  {
     name: "Vagabond",
-    description: " ",
+    description:
+      "The past year has challenged me in ways I never imagined, presenting hardships that brought immense suffering, but also paved the way for profound internal growth. This journey of struggle and self-discovery mirrors the path of Miyamoto Musashi, as depicted in Vagabond, the semi-fictional masterpiece by manga legend Takehiko Inoue. Through stunning artwork and deep storytelling, Inoue captures the relentless pursuit of mastery and the inner turmoil that accompanies it. Vagabond is not just a story of swordsmanship but a reflection on the human spirit’s capacity to evolve through adversity, making it a powerful source of inspiration.",
     image: "https://demo-bucket-kap.s3.amazonaws.com/mediablog/vagabond.jpg",
-    date: "2024",
+    date: "10/01/2024",
     rating: (
       <div
         style={{
@@ -37,10 +58,11 @@ const media_elements = [
   },
   {
     name: "Deftones: Around the Fur",
-    description: " ",
+    description:
+      "This album navigates between two distinct sonic modes: intense walls of noise driven by blaring guitars and raw, screaming vocals, and melancholic choruses with hypnotic melodies accompanied by a soothing, almost ethereal voice. Both styles are masterfully executed by Chino Moreno, whose versatility brings the dynamic range of emotions to life. Standout tracks like 'Be Quiet and Drive' and 'Lhabia' perfectly encapsulate the blend of aggression and introspection. It’s the ideal soundtrack for the gym, helping you lock in and push through challenges with its powerful energy and emotional depth. Deftones' *Around the Fur* is a testament to the band’s ability to create a visceral, immersive experience.",
     image:
       "https://demo-bucket-kap.s3.amazonaws.com/mediablog/deftonesaroundthefur.jpg",
-    date: "2024",
+    date: "10/01/2024",
     rating: (
       <div
         style={{
@@ -54,34 +76,35 @@ const media_elements = [
     ),
     link: "https://music.apple.com/us/album/around-the-fur/1099843198",
   },
-  {
-    name: "Soul Eater",
-    description: " ",
-    image: "https://demo-bucket-kap.s3.amazonaws.com/mediablog/souleater.jpg",
-    date: "2024",
-    rating: (
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
-        <BsStarFill style={{ marginRight: "2px" }} />
-        <BsStarFill style={{ marginRight: "2px" }} />
-        <BsStarHalf style={{ marginRight: "2px" }} />
-        <BsStar style={{ marginRight: "2px" }} />
-        <BsStar style={{ marginRight: "2px" }} />
-      </div>
-    ),
-    link: "https://www.crunchyroll.com/series/GYX0ZW80R/soul-eater",
-  },
+  // {
+  //   name: "Soul Eater",
+  //   description: " ",
+  //   image: "https://demo-bucket-kap.s3.amazonaws.com/mediablog/souleater.jpg",
+  //   date: "2024",
+  //   rating: (
+  //     <div
+  //       style={{
+  //         display: "flex",
+  //         alignItems: "center",
+  //         justifyContent: "center",
+  //       }}
+  //     >
+  //       <BsStarFill style={{ marginRight: "2px" }} />
+  //       <BsStarFill style={{ marginRight: "2px" }} />
+  //       <BsStarHalf style={{ marginRight: "2px" }} />
+  //       <BsStar style={{ marginRight: "2px" }} />
+  //       <BsStar style={{ marginRight: "2px" }} />
+  //     </div>
+  //   ),
+  //   link: "https://www.crunchyroll.com/series/GYX0ZW80R/soul-eater",
+  // },
   {
     name: "Delicious in Dungeon",
-    description: " ",
+    description:
+      "I never expected a gimmicky cooking to hook me, but this show did just that. It’s a fun blend of adventure and creativity, much like Spy x Family surprised me. Now, I can't wait for the second season— it's very simple, entertaining, and unexpectedly heartwarming.",
     image:
       "https://demo-bucket-kap.s3.amazonaws.com/mediablog/dungeonmeshi.jpg",
-    date: "2024",
+    date: "10/01/2024",
     rating: (
       <div
         style={{
@@ -101,9 +124,10 @@ const media_elements = [
   },
   {
     name: "SPY x Family",
-    description: " ",
+    description:
+      "This show follows three unlikely family members—a spy, an assassin, and a telepath—who come together in a world of espionage, each hiding their true identity while working through challenges in their own unique way. The show's clever mix of action, humor, and heartwarming moments, paired with the unexpected family dynamic, had me hooked from the start. It was bittersweet to finish and set the series aside—I'm already eagerly waiting for more.",
     image: "https://demo-bucket-kap.s3.amazonaws.com/mediablog/spyfamily.jpg",
-    date: "2024",
+    date: "10/01/2024",
     rating: (
       <div
         style={{
@@ -121,50 +145,50 @@ const media_elements = [
     ),
     link: "https://www.crunchyroll.com/series/G4PH0WXVJ/spy-x-family",
   },
-  {
-    name: "Frieren: Beyond a Journey's End",
-    description: " ",
-    image: "https://demo-bucket-kap.s3.amazonaws.com/mediablog/frieren.jpg",
-    date: "2024",
-    rating: (
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
-        <BsStarFill style={{ marginRight: "2px" }} />
-        <BsStarFill style={{ marginRight: "2px" }} />
-        <BsStarFill style={{ marginRight: "2px" }} />
-        <BsStarHalf style={{ marginRight: "2px" }} />
-        <BsStar style={{ marginRight: "2px" }} />
-      </div>
-    ),
-    link: "https://www.crunchyroll.com/series/GG5H5XQX4/frieren-beyond-journeys-end",
-  },
-  {
-    name: "Jujustu Kaisen",
-    description: " ",
-    image: "https://demo-bucket-kap.s3.amazonaws.com/mediablog/jjk.jpg",
-    date: "2024",
-    rating: (
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
-        <BsStarFill style={{ marginRight: "2px" }} />
-        <BsStarFill style={{ marginRight: "2px" }} />
-        <BsStarFill style={{ marginRight: "2px" }} />
-        <BsStar style={{ marginRight: "2px" }} />
-        <BsStar style={{ marginRight: "2px" }} />
-      </div>
-    ),
-    link: "https://www.crunchyroll.com/series/GRDV0019R/jujutsu-kaisen",
-  },
+  // {
+  //   name: "Frieren: Beyond a Journey's End",
+  //   description: " ",
+  //   image: "https://demo-bucket-kap.s3.amazonaws.com/mediablog/frieren.jpg",
+  //   date: "2024",
+  //   rating: (
+  //     <div
+  //       style={{
+  //         display: "flex",
+  //         alignItems: "center",
+  //         justifyContent: "center",
+  //       }}
+  //     >
+  //       <BsStarFill style={{ marginRight: "2px" }} />
+  //       <BsStarFill style={{ marginRight: "2px" }} />
+  //       <BsStarFill style={{ marginRight: "2px" }} />
+  //       <BsStarHalf style={{ marginRight: "2px" }} />
+  //       <BsStar style={{ marginRight: "2px" }} />
+  //     </div>
+  //   ),
+  //   link: "https://www.crunchyroll.com/series/GG5H5XQX4/frieren-beyond-journeys-end",
+  // },
+  // {
+  //   name: "Jujustu Kaisen",
+  //   description: " ",
+  //   image: "https://demo-bucket-kap.s3.amazonaws.com/mediablog/jjk.jpg",
+  //   date: "2024",
+  //   rating: (
+  //     <div
+  //       style={{
+  //         display: "flex",
+  //         alignItems: "center",
+  //         justifyContent: "center",
+  //       }}
+  //     >
+  //       <BsStarFill style={{ marginRight: "2px" }} />
+  //       <BsStarFill style={{ marginRight: "2px" }} />
+  //       <BsStarFill style={{ marginRight: "2px" }} />
+  //       <BsStar style={{ marginRight: "2px" }} />
+  //       <BsStar style={{ marginRight: "2px" }} />
+  //     </div>
+  //   ),
+  //   link: "https://www.crunchyroll.com/series/GRDV0019R/jujutsu-kaisen",
+  // },
   {
     name: "Bleach",
     description:
