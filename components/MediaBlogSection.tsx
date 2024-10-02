@@ -14,7 +14,7 @@ import {
 
 const media_elements = [
   {
-    name: "Parannould: To See the Next Part of the Dream",
+    name: "Parannoul: To See the Next Part of the Dream",
     description:
       "This project is an unforgettable blend of rock, with walls of noise and grungy melodies that feel entirely unique. While the mixing might be rough, it adds to the raw, immersive experience that no other album replicates. I can’t imagine a day without listening to it—it’s a project that will easily go down as my most cherished and most played album of all time.",
     image:
