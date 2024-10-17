@@ -32,12 +32,12 @@ const HeroSection = () => {
             Hi, I&#39;m Kacper!
           </h1>
           <p className="text-lg mt-4 mb-6 md:text-2xl">
-            As a Toronto Metropolitan University (TMU){" "}
-            <span className="font-bold">Computer Engineering </span>
-            graduate, I am eager to explore the world of systems and design with
-            a keen interest in front-end software development and graphical user
-            interfaces.
+            Hi, I’m Kacper Burza, a Computer Engineering graduate from Toronto
+            Metropolitan University. I work across front-end, back-end, and
+            security, building efficient and impactful software solutions.
+            Explore my work and feel free to reach out!
           </p>
+
           <a
             href={resumeUrl}
             target="_blank"
