@@ -34,7 +34,7 @@ const media_elements = [
         <BsStarHalf style={{ marginRight: "2px" }} />
       </div>
     ),
-    link: "https://music.apple.com/us/album/to-see-the-next-part-of-the-dream/1563369236",
+    link: "https://www.viz.com/hunter-x-hunter",
   },
   {
     name: "Parannoul: To See the Next Part of the Dream",
