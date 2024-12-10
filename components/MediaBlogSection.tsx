@@ -14,6 +14,29 @@ import {
 
 const media_elements = [
   {
+    name: "Hunter X Hunter",
+    description:
+      "Following probably my busiest year ever, I decided to pick up an interesting series I kept hearing about. Ever since I first started it, Hunter x Hunter has been an unforgettable experience. Unlike most shonen that lean into overused tropes like random, unexplained abilities or a single, predictable protagonist, Togashi’s storytelling subverts expectations at every turn. The almost chaotic structure keeps me guessing, and every twist feels fresh, creative, and emotionally rewarding. As dark as the series gets, it never loses its wholesome undertone, which is what makes it so special to me. It asks for more patience and attention than most anime or manga, with its intricate setups for powers and storylines, but the payoff is always worth it. It’s a journey that dives deep into serious themes while still holding on to a feel-good, uplifting message—something I’ve come to really cherish.",
+    image: "https://demo-bucket-kap.s3.amazonaws.com/mediablog/hxh.jpg",
+    date: "12/09/2024",
+    rating: (
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <BsStarFill style={{ marginRight: "2px" }} />
+        <BsStarFill style={{ marginRight: "2px" }} />
+        <BsStarFill style={{ marginRight: "2px" }} />
+        <BsStarFill style={{ marginRight: "2px" }} />
+        <BsStarHalf style={{ marginRight: "2px" }} />
+      </div>
+    ),
+    link: "https://music.apple.com/us/album/to-see-the-next-part-of-the-dream/1563369236",
+  },
+  {
     name: "Parannoul: To See the Next Part of the Dream",
     description:
       "This project is an unforgettable blend of rock, with walls of noise and grungy melodies that feel entirely unique. While the mixing might be rough, it adds to the raw, immersive experience that no other album replicates. I can’t imagine a day without listening to it—it’s a project that will easily go down as my most cherished and most played album of all time.",
