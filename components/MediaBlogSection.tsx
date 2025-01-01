@@ -14,6 +14,24 @@ import {
 
 const media_elements = [
   {
+    name: "ICO",
+    description:
+      "Following the reveal of 'Project: Robot' that I stumbled upon in the year's closing, I decided to start a series of games that I had always wanted to try out. Fumetsu Ueda's games always intrigued me in the way that they portray themselves, and become an embodiment  of the argument: 'can games really be art?'. Having finally played ICO, the game is undeniably a piece of art, with stunning visuals, a beautiful soundtrack, and a unique style that creates an emotional and memorable experience. It’s the kind of game that makes you feel something, and for that alone, I’d recommend it to anyone. That said, as a game, it’s not without flaws. The gameplay can feel repetitive and slow, and it doesn’t always deliver in terms of fun or excitement. But maybe that’s the point—ICO prioritizes atmosphere and storytelling over traditional gameplay. Overall, ICO is a special experience worth having, even if it’s not perfect. It’s less about entertainment and more about immersion, and it’s something I think everyone should try at least once.",
+    image: "https://demo-bucket-kap.s3.amazonaws.com/mediablog/ico.png",
+    date: "01/01/2025",
+    rating: (
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <MdThumbUp style={{ marginRight: "2px" }} />
+      </div>
+    ),
+  },
+  {
     name: "Hunter X Hunter",
     description:
       "Following probably my busiest year ever, I decided to pick up an interesting series I kept hearing about. Ever since I first started it, Hunter x Hunter has been an unforgettable experience. Unlike most shonen that lean into overused tropes like random, unexplained abilities or a single, predictable protagonist, Togashi’s storytelling subverts expectations at every turn. The almost chaotic structure keeps me guessing, and every twist feels fresh, creative, and emotionally rewarding. As dark as the series gets, it never loses its wholesome undertone, which is what makes it so special to me. It asks for more patience and attention than most anime or manga, with its intricate setups for powers and storylines, but the payoff is always worth it. It’s a journey that dives deep into serious themes while still holding on to a feel-good, uplifting message—something I’ve come to really cherish.",
