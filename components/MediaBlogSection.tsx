@@ -14,6 +14,50 @@ import {
 
 const media_elements = [
   {
+    name: "The Last Guardian",
+    description:
+      "The Last Guardian is, in my opinion, the pinnacle of Fumito Ueda's work. Its layered world-building, emotionally resonant story, and the lifelike AI of Trico create a deeply moving experience. Trico’s behavior, while occasionally (and intentionally) frustrating, is a masterful depiction of a real animal's unpredictability and trust-building, making the bond between Trico and the boy feel genuine and unforgettable. The game’s minimalist storytelling and breathtaking environments invite players to immerse themselves, crafting a personal narrative that lingers long after the credits roll. While the controls and technical limitations show the game’s ambition outpacing its hardware, these flaws are minor compared to the emotional weight it delivers. This isn’t just a game—it’s an experience that sets a new benchmark for emotional storytelling. With this three-part marathon coming to a close, I can’t wait to see what Ueda creates next with Project: Robot.",
+    image: "https://demo-bucket-kap.s3.amazonaws.com/mediablog/tlg.png",
+    date: "01/13/2025",
+    rating: (
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <BsStarFill style={{ marginRight: "2px" }} />
+        <BsStarFill style={{ marginRight: "2px" }} />
+        <BsStarFill style={{ marginRight: "2px" }} />
+        <BsStarFill style={{ marginRight: "2px" }} />
+        <BsStarHalf style={{ marginRight: "2px" }} />
+      </div>
+    ),
+  },
+  {
+    name: "Shadow of the Colossus",
+    description:
+      "Continuing my journey through Fumito Ueda's works, my next stop was Shadow of the Colossus. Growing up, I found its visual presentation intimidating, but finally diving in, I see why it’s so celebrated. The world feels like a dark, forgotten relic, with its empty landscapes and towering ruins laying out the story in front of the player. The colossi are stunningly designed, deeply connected with the environments that you face them in - making it all the more saddening when you take them down and return their form to the dust that they came from. While I found the gameplay and atmosphere to be incredible, I felt that it lacked the emotional resonance and impact of its predecessor, ICO. Although the narrative sets up themes of sacrifice, loss, and love, it almost never pauses to let their weight fully sink in. Still, Ueda’s mastery of minimalist storytelling and gorgeous design makes SOTC an unforgettable experience.",
+    image: "https://demo-bucket-kap.s3.amazonaws.com/mediablog/sotc.png",
+    date: "01/03/2025",
+    rating: (
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <BsStarFill style={{ marginRight: "2px" }} />
+        <BsStarFill style={{ marginRight: "2px" }} />
+        <BsStarFill style={{ marginRight: "2px" }} />
+        <BsStarHalf style={{ marginRight: "2px" }} />
+        <BsStar style={{ marginRight: "2px" }} />
+      </div>
+    ),
+  },
+  {
     name: "ICO",
     description:
       "Following the reveal of 'Project: Robot' that I stumbled upon in the year's closing, I decided to start a series of games that I had always wanted to try out. Fumetsu Ueda's games always intrigued me in the way that they portray themselves, and become an embodiment  of the argument: 'can games really be art?'. Having finally played ICO, the game is undeniably a piece of art, with stunning visuals, a beautiful soundtrack, and a unique style that creates an emotional and memorable experience. It’s the kind of game that makes you feel something, and for that alone, I’d recommend it to anyone. That said, as a game, it’s not without flaws. The gameplay can feel repetitive and slow, and it doesn’t always deliver in terms of fun or excitement. But maybe that’s the point—ICO prioritizes atmosphere and storytelling over traditional gameplay. Overall, ICO is a special experience worth having, even if it’s not perfect. It’s less about entertainment and more about immersion, and it’s something I think everyone should try at least once.",
@@ -180,7 +224,7 @@ const media_elements = [
         <BsStarFill style={{ marginRight: "2px" }} />
         <BsStarFill style={{ marginRight: "2px" }} />
         <BsStarFill style={{ marginRight: "2px" }} />
-        <BsStarHalf style={{ marginRight: "2px" }} />
+        <BsStar style={{ marginRight: "2px" }} />
         <BsStar style={{ marginRight: "2px" }} />
       </div>
     ),
@@ -267,7 +311,7 @@ const media_elements = [
         <BsStarFill style={{ marginRight: "2px" }} />
         <BsStarFill style={{ marginRight: "2px" }} />
         <BsStarFill style={{ marginRight: "2px" }} />
-        <BsStarHalf style={{ marginRight: "2px" }} />
+        <BsStar style={{ marginRight: "2px" }} />
       </div>
     ),
     link: "https://www.playstation.com/en-ca/games/bloodborne/",
@@ -289,7 +333,7 @@ const media_elements = [
         <BsStarFill style={{ marginRight: "2px" }} />
         <BsStarFill style={{ marginRight: "2px" }} />
         <BsStarFill style={{ marginRight: "2px" }} />
-        <BsStarFill style={{ marginRight: "2px" }} />
+        <BsStarHalf style={{ marginRight: "2px" }} />
         <BsStar style={{ marginRight: "2px" }} />
       </div>
     ),
@@ -312,7 +356,7 @@ const media_elements = [
         <BsStarFill style={{ marginRight: "2px" }} />
         <BsStarFill style={{ marginRight: "2px" }} />
         <BsStarFill style={{ marginRight: "2px" }} />
-        <BsStarHalf style={{ marginRight: "2px" }} />
+        <BsStar style={{ marginRight: "2px" }} />
         <BsStar style={{ marginRight: "2px" }} />
       </div>
     ),
@@ -525,7 +569,7 @@ const media_elements = [
         <BsStarFill style={{ marginRight: "2px" }} />
         <BsStarFill style={{ marginRight: "2px" }} />
         <BsStarFill style={{ marginRight: "2px" }} />
-        <BsStarHalf style={{ marginRight: "2px" }} />
+        <BsStar style={{ marginRight: "2px" }} />
         <BsStar style={{ marginRight: "2px" }} />
       </div>
     ),
