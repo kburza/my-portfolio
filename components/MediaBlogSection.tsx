@@ -136,7 +136,7 @@ const media_elements = [
         <BsStarFill style={{ marginRight: "2px" }} />
         <BsStarFill style={{ marginRight: "2px" }} />
         <BsStarFill style={{ marginRight: "2px" }} />
-        <BsStarHalf style={{ marginRight: "2px" }} />
+        <BsStar style={{ marginRight: "2px" }} />
       </div>
     ),
     link: "https://www.viz.com/vagabond",

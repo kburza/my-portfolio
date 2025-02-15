@@ -11,9 +11,9 @@ import { TiArrowSortedDown } from "react-icons/ti";
 
 const HeroSection = () => {
   const resumeUrl =
-    "https://demo-bucket-kap.s3.amazonaws.com/Kacper_Burza_Resume_2024.pdf";
+    "https://demo-bucket-kap.s3.amazonaws.com/Kacper_Burza_Resume.pdf";
   const resumeUrl_pl =
-    "https://demo-bucket-kap.s3.amazonaws.com/Kacper_Burza_Resume_2024_pl.pdf";
+    "https://demo-bucket-kap.s3.amazonaws.com/Kacper_Burza_Resume_pl.pdf";
 
   return (
     <section id="home">
