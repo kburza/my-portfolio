@@ -32,10 +32,10 @@ const HeroSection = () => {
             Hi, I&#39;m Kacper!
           </h1>
           <p className="text-lg mt-4 mb-6 md:text-2xl">
-            Hi, I’m Kacper Burza, a Computer Engineering graduate from Toronto
-            Metropolitan University. I work across front-end, back-end, and
-            security, building efficient and impactful software solutions.
-            Explore my work and feel free to reach out!
+            Hi, I’m Kacper Burza — a Software Developer and Computer Engineering
+            graduate passionate about full-stack and cloud-native development. I
+            build scalable, secure applications with modern tools like React,
+            Node.js, and Spring Boot.
           </p>
 
           <a
