@@ -20,9 +20,25 @@ interface TimelineItemProps {
 
 const steps = [
   {
+    title: "Scotiabank",
+    addinfo: "Software Developer — Global Wealth Engineering",
+    description: "March 2025 — Present | Toronto, Ontario",
+    content: [
+      {
+        title: "Key Contributions:",
+        subtitles: [
+          "Upgraded and modernized enterprise-level projects built in Spring Boot and Node.js, deploying within Kubernetes clusters on GCP and Azure",
+          "Used Git and Bitbucket for version control and CI/CD pipeline management, participating in dozens of deployments involving QA validation, debugging, and security remediation",
+          "Created and optimized Power BI dashboards for incident data from ServiceNow using SQL queries to improve visibility and analytics",
+          "Developed proofs of concept (PoCs) for a React (TypeScript) client onboarding application and for authentication/token-based microservices, designed for secure and scalable architecture",
+        ],
+      },
+    ],
+  },
+  {
     title: "CanDeal",
     addinfo: "Enterprise Technology Intern",
-    description: "June. 2024 — Present | Toronto, Ontario",
+    description: "June 2024 — September 2024 | Toronto, Ontario",
     content: [
       {
         title: "Details:",
@@ -37,14 +53,14 @@ const steps = [
   {
     title: "FEA-TC",
     addinfo: "Inside Technical Sales",
-    description: "July. 2023 — January 2024 | Mississauga, Ontario",
+    description: "July 2023 — January 2024 | Mississauga, Ontario",
     content: [
       {
         title: "Accomplishments:",
         subtitles: [
           "Worked extensively with SolidWorks, a leading 3D computer-aided design (CAD) software used by engineers and designers to create, simulate, and visualize product designs",
-          "Engaged in sales prospecting, expanding the customer base and driving business growth through the Zoho CRM.",
-          "Provided comprehensive solutions and product information to clients, leveraging expertise in SolidWorks software and industry best practices.",
+          "Engaged in sales prospecting, expanding the customer base and driving business growth through the Zoho CRM",
+          "Provided comprehensive solutions and product information to clients, leveraging expertise in SolidWorks software and industry best practices",
         ],
       },
     ],
@@ -57,26 +73,12 @@ const steps = [
       {
         title: "Accomplishments:",
         subtitles: [
-          "Used JavaScript, HTML, and CSS, designed and implemented the front-end of a website including a main page and all accompanying pages (main page, contacts list, etc.)",
+          "Used JavaScript, HTML, and CSS to design and implement the front-end of a website including all main and supporting pages",
           "Ensured website compatibility across multiple devices by implementing an extensive CSS codebase optimized for both desktop and mobile access",
         ],
       },
     ],
   },
-  // {
-  //   title: "Storm Construction Inc.",
-  //   addinfo: "Assistant Contractor",
-  //   description: "2015 - Present | Ontario, Canada",
-  //   content: [
-  //     {
-  //       title: "Accomplishments:",
-  //       subtitles: [
-  //         "Managed 40+ construction projects from onset to completion, delivering high-quality work and earning a reputation for dependability and professionalism",
-  //         "Coordinated with clients, architects, engineers, and subcontractors to deliver projects on time and within budget, while providing excellent customer service",
-  //       ],
-  //     },
-  //   ],
-  // },
 ];
 
 const TimelineItem: React.FC<TimelineItemProps> = ({ data, index }) => {
@@ -100,11 +102,11 @@ const TimelineItem: React.FC<TimelineItemProps> = ({ data, index }) => {
           </span>
         </div>
         <ul className={styles["container-content-list"]}>
-          {content.map((item, index) => (
+          {content.map((item) => (
             <li key={item.title} className={styles["li-outside"]}>
               {item.title}
               <ul>
-                {item.subtitles.map((subtitle, index) => (
+                {item.subtitles.map((subtitle) => (
                   <span className={styles["contcont"]} key={subtitle}>
                     •&nbsp;
                     <li className={styles["li-inside"]}>{subtitle}</li>
