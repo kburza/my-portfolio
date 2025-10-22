@@ -28,7 +28,7 @@ const steps = [
         title: "Key Contributions:",
         subtitles: [
           "Upgraded and modernized enterprise-level projects built in Spring Boot and Node.js, deploying within Kubernetes clusters on GCP and Azure",
-          "Used Git and Bitbucket for version control and CI/CD pipeline management, participating in dozens of deployments involving QA validation, debugging, and security remediation",
+          "Used Git and Bitbucket for version control and CI/CD pipeline management, participating in over a dozen deployments involving QA validation, debugging, and security remediation",
           "Created and optimized Power BI dashboards for incident data from ServiceNow using SQL queries to improve visibility and analytics",
           "Developed proofs of concept (PoCs) for a React (TypeScript) client onboarding application and for authentication/token-based microservices, designed for secure and scalable architecture",
         ],
