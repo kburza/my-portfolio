@@ -1,8 +1,24 @@
-import { Bounds } from "@react-three/drei";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { useRef } from "react";
-import { Mesh, Group, BoxGeometry, MeshPhongMaterial, Vector3 } from "three";
+import { useRef, Component, ReactNode } from "react";
+import { Group, Vector3 } from "three";
 import { PerspectiveCamera } from "@react-three/drei";
+
+class WebGLErrorBoundary extends Component<
+  { children: ReactNode; fallback: ReactNode },
+  { hasError: boolean }
+> {
+  constructor(props: { children: ReactNode; fallback: ReactNode }) {
+    super(props);
+    this.state = { hasError: false };
+  }
+  static getDerivedStateFromError() {
+    return { hasError: true };
+  }
+  render() {
+    if (this.state.hasError) return this.props.fallback;
+    return this.props.children;
+  }
+}
 
 function LShape() {
   const groupRef = useRef<Group>(null);
@@ -44,13 +60,15 @@ function LShape() {
 
 export default function ThreeD() {
   return (
-    <div style={{ width: "100%", height: "28vh" }}>
-      <Canvas>
-        <PerspectiveCamera makeDefault fov={20} position={[0, 0, 8]} />
-        <ambientLight />
-        <pointLight position={[10, 10, 10]} />
-        <LShape />
-      </Canvas>
-    </div>
+    <WebGLErrorBoundary fallback={<div style={{ width: "100%", height: "28vh" }} />}>
+      <div style={{ width: "100%", height: "28vh" }}>
+        <Canvas gl={{ failIfMajorPerformanceCaveat: false }}>
+          <PerspectiveCamera makeDefault fov={20} position={[0, 0, 8]} />
+          <ambientLight />
+          <pointLight position={[10, 10, 10]} />
+          <LShape />
+        </Canvas>
+      </div>
+    </WebGLErrorBoundary>
   );
 }

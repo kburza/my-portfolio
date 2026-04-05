@@ -8,11 +8,20 @@ const projects = [
   {
     name: "Implant ID",
     description:
-      "Full-stack dental implant identification SaaS portal. Users navigate a step-by-step filtering wizard to identify implants across a 250+ record database spanning 30+ brands. Built with Next.js, React 19, TypeScript, Material UI, Drizzle ORM, Neon Postgres, and NextAuth — deployed on Vercel.",
+      "Full-stack dental implant identification SaaS portal with a step-by-step filtering wizard. Built with Next.js, React 19, TypeScript, Material UI, Drizzle ORM, Neon Postgres, and NextAuth - deployed on Vercel.",
     image:
       "https://demo-bucket-kap.s3.us-east-1.amazonaws.com/my-portfolio-projects-assets/my-portfolio-projects-assets/dentist-app.png",
-    github: "",
+    github: "https://github.com/kburza/dental-data-portal",
     link: "https://dental-data-portal.vercel.app/",
+  },
+  {
+    name: "Chatsper: Chat App",
+    description:
+      "Private chat app built with Angular and Firebase for secure user authentication. Includes cryptography implementation.",
+    image:
+      "https://demo-bucket-kap.s3.amazonaws.com/my-portfolio-projects-assets/my-portfolio-projects-assets/chatsper.png",
+    github: "https://github.com/kburza/ang-chat-app",
+    link: "https://kburza.github.io/ang-chat-app/",
   },
   {
     name: "DLSTR-ML",
@@ -23,15 +32,6 @@ const projects = [
     github:
       "https://github.com/ncheungg/DEEP-LEARNING-SECURITY-TOOLS-REPOSITORY",
     link: "https://rsa02.netlify.app/",
-  },
-  {
-    name: "Chatsper: Chat App",
-    description:
-      "Private chat app built with Angular and Firebase for secure user authentication. Includes cryptography implementation.",
-    image:
-      "https://demo-bucket-kap.s3.amazonaws.com/my-portfolio-projects-assets/my-portfolio-projects-assets/chatsper.png",
-    github: "https://github.com/kburza/ang-chat-app",
-    link: "https://kburza.github.io/ang-chat-app/",
   },
   {
     name: "Arashi 2.0",

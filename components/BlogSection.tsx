@@ -13,20 +13,20 @@ import { BiLogoNetlify } from "react-icons/bi";
 
 const blogs = [
   {
-    name: "Art Blog",
-    description:
-      "Check out the art and designs that I work on in service of projects or just as a hobby.",
-    image:
-      "https://demo-bucket-kap.s3.amazonaws.com/my-portfolio-projects-assets/my-portfolio-projects-assets/artblog.png",
-    link: "/artblog/#",
-  },
-  {
     name: "Media Blog",
     description:
       "Also, view my reviews and opinions on the various media that I consume in my spare time.",
     image:
       "https://demo-bucket-kap.s3.amazonaws.com/my-portfolio-projects-assets/my-portfolio-projects-assets/mediablog.png",
     link: "/mediablog/#",
+  },
+  {
+    name: "Art Blog",
+    description:
+      "Check out the art and designs that I work on in service of projects or just as a hobby.",
+    image:
+      "https://demo-bucket-kap.s3.amazonaws.com/my-portfolio-projects-assets/my-portfolio-projects-assets/artblog.png",
+    link: "/artblog/#",
   },
 ];
 
