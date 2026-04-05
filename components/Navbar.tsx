@@ -1,3 +1,4 @@
+"use client";
 import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll/modules";
 import { usePathname, useRouter } from "next/navigation";
@@ -41,6 +42,7 @@ const NAV_ITEMS: Array<NavItem> = [
 export default function Navbar() {
   const { systemTheme, theme, setTheme } = useTheme();
   const [currentTheme, setCurrentTheme] = useState<string | undefined>();
+  const [mounted, setMounted] = useState(false);
   const pathname = usePathname();
   const [navbar, setNavbar] = useState(false);
 
@@ -57,8 +59,7 @@ export default function Navbar() {
   }, [currentTheme]);
 
   useEffect(() => {
-    // This will run whenever 'theme' or 'systemTheme' changes,
-    // and update 'currentTheme' to always reflect the correct theme.
+    setMounted(true);
     setCurrentTheme(theme === "system" ? systemTheme : theme);
   }, [theme, systemTheme]);
 
@@ -165,7 +166,7 @@ export default function Navbar() {
                   );
                 })}
 
-                {currentTheme === "dark" ? (
+                {mounted && (currentTheme === "dark" ? (
                   <button
                     onClick={() => {
                       setTheme("light");
@@ -186,7 +187,7 @@ export default function Navbar() {
                   >
                     <RiMoonFill size={25} color="white" />
                   </button>
-                )}
+                ))}
               </div>
             )}
           </div>
