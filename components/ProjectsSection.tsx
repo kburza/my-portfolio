@@ -147,7 +147,7 @@ const ProjectsSection = () => {
         Projects
         <div className="w-12 h-1 mx-auto my-4 rounded-full bg-gradient-to-r from-blue-500 to-purple-600" />
       </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {projects.map((project, idx) => (
           <SlideUp key={idx}>
             <ProjectCard project={project} />
