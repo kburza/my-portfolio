@@ -32,6 +32,11 @@ const skills = [
   { skill: "Angular" },
   { skill: "Firebase" },
   { skill: "Three.js" },
+  { skill: "Claude Code" },
+  { skill: "OpenAI / GPT" },
+  { skill: "Gemini" },
+  { skill: "LLM Integration" },
+  { skill: "Prompt Engineering" },
   { skill: "C" },
   { skill: "C++" },
   { skill: "Verilog" },
@@ -58,7 +63,7 @@ const AboutSection = () => {
       <div className="my-12 pb-12 md:pt-16 md:pb-48">
         <h1 className="text-center font-bold text-4xl">
           About Me
-          <hr className="w-6 h-1 mx-auto my-4 bg-gray-500 border-0 rounded"></hr>
+          <div className="w-12 h-1 mx-auto my-4 rounded-full bg-gradient-to-r from-blue-500 to-purple-600" />
         </h1>
 
         <div className="flex flex-col space-y-10 items-stretch justify-center align-top md:space-x-10 md:space-y-0 md:p-4 md:flex-row md:text-left">
@@ -75,46 +80,40 @@ const AboutSection = () => {
                 Engineering
               </span>{" "}
               and work on enterprise-grade applications across the full stack. I
-              am passionate about software development, with expertise spanning
-              front-end and back-end technologies, cloud computing, and agile
-              methodologies.
+              am passionate about building functional, efficient, and modern
+              software — spanning front-end and back-end development, cloud
+              infrastructure, and AI-assisted tooling.
             </p>
             <br />
             <p>
-              I have worked on full-stack web development projects using{" "}
+              I have worked on full-stack projects using{" "}
               <span className="font-bold">
                 Java Spring Boot, React, Next.js, FastAPI, AWS,
               </span>{" "}
-              and <span className="font-bold">Microsoft Azure.</span> As an{" "}
-              <span className="font-bold">Enterprise Technology Intern</span> at{" "}
-              <span className="font-bold">CanDeal</span>, I developed a secure
-              internal tool leveraging technologies like{" "}
+              and <span className="font-bold">Microsoft Azure</span>, including
+              production deployments across{" "}
+              <span className="font-bold">Kubernetes</span> clusters on GCP and
+              Azure. I actively integrate{" "}
               <span className="font-bold">
-                Next.js, FastAPI, AWS App Studio,
+                large language models into my development workflow
+              </span>
+              , working with tools like{" "}
+              <span className="font-bold">
+                Claude Code, OpenAI GPT, and Gemini
               </span>{" "}
-              and{" "}
-              <span className="font-bold">Amazon RDS Aurora PostgreSQL</span>{" "}
-              for data management. I deployed applications using{" "}
-              <span className="font-bold">Docker</span> and collaborated with
-              teams using <span className="font-bold">Azure DevOps</span>.
+              for everything from code generation and debugging to building
+              LLM-powered features in applications.
             </p>
             <br />
             <p>
-              In addition to my professional experience, I have led personal
-              projects such as a{" "}
-              <span className="font-bold">
-                Deep Learning Security Tools Repository Web-App
-              </span>{" "}
-              and participated in a hackathon to create a{" "}
-              <span className="font-bold">pandemic relief website</span>. I
-              thrive in collaborative team environments, using{" "}
-              <span className="font-bold">Agile/Scrum</span> methodologies and
-              cross-functional teamwork. Fluent in both{" "}
+              I thrive in collaborative, cross-functional environments using{" "}
+              <span className="font-bold">Agile/Scrum</span> methodologies.
+              Fluent in both{" "}
               <span className="font-bold">English</span> and{" "}
-              <span className="font-bold">Polish</span>, I&#39;m proficient in a
-              range of programming languages including{" "}
+              <span className="font-bold">Polish</span>, I&#39;m proficient
+              across a wide range of languages including{" "}
               <span className="font-bold">
-                JavaScript/TypeScript, Java, C/C++, Python,
+                JavaScript/TypeScript, Java, Python, C/C++,
               </span>{" "}
               and <span className="font-bold">SQL</span>.
             </p>
@@ -139,7 +138,7 @@ const AboutSection = () => {
                 <motion.p
                   key={idx}
                   variants={skillItem}
-                  className="bg-gray-200 px-4 py-2 mr-2 mt-2 text-gray-500 rounded font-semibold"
+                  className="px-3 py-1.5 mr-2 mt-2 text-sm font-medium rounded-md border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800/50 text-gray-700 dark:text-gray-300 hover:border-blue-400 dark:hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400 transition-all cursor-default"
                 >
                   {item.skill}
                 </motion.p>

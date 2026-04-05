@@ -3,14 +3,30 @@
 @tailwind utilities;
 
 :root {
-    --color-background: white;
-    --color-text: black;
-    --color-border: rgba(0, 0, 0, 0.8);
-  }
-  
-  [data-theme="dark"] {
-    --color-background: black;
-    --color-text: white;
-    --color-border: rgba(255, 255, 255, 0.8);
-  }
+  --color-background: white;
+  --color-text: black;
+  --color-border: rgba(0, 0, 0, 0.8);
+}
+
+.dark {
+  --color-background: black;
+  --color-text: white;
+  --color-border: rgba(255, 255, 255, 0.8);
+}
+
+body {
+  background-image: radial-gradient(
+    ellipse 120% 40% at 50% 0%,
+    rgba(59, 130, 246, 0.08) 0%,
+    transparent 100%
+  );
+}
+
+.dark body {
+  background-image: radial-gradient(
+    ellipse 120% 40% at 50% 0%,
+    rgba(59, 130, 246, 0.06) 0%,
+    transparent 100%
+  );
+}
   

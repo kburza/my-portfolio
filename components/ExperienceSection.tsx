@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "./Timeline.module.css";
 import SlideUp from "./SlideUp";
 
 interface Subtitle {
@@ -14,12 +13,7 @@ interface Step {
   content: Subtitle[];
 }
 
-interface TimelineItemProps {
-  data: Step;
-  index: number;
-}
-
-const steps = [
+const steps: Step[] = [
   {
     title: "Scotiabank",
     addinfo: "Software Developer — Global Wealth Engineering",
@@ -60,7 +54,7 @@ const steps = [
       {
         title: "Accomplishments:",
         subtitles: [
-          "Worked extensively with SolidWorks, a leading 3D computer-aided design (CAD) software used by engineers and designers to create, simulate, and visualize product designs",
+          "Worked extensively with SolidWorks, a leading 3D CAD software used by engineers and designers to create, simulate, and visualize product designs",
           "Engaged in sales prospecting, expanding the customer base and driving business growth through the Zoho CRM",
           "Provided comprehensive solutions and product information to clients, leveraging expertise in SolidWorks software and industry best practices",
         ],
@@ -83,66 +77,57 @@ const steps = [
   },
 ];
 
-const TimelineItem: React.FC<TimelineItemProps> = ({ data, index }) => {
-  const { title, description, content } = data;
-  return (
-    <div className={styles["container-item"]}>
-      <div className={styles["container-content-item"]}>
-        <div className={styles["container-content-header"]}>
-          <span
-            className={`${styles["container-content-header-time"]} ${styles["container-roadmap-items"]}`}
-          >
-            {title}
-          </span>
-          {data.addinfo && (
-            <li key={data.addinfo} className={styles["li-outside"]}>
-              {data.addinfo}
-            </li>
-          )}
-          <span className={styles["container-content-header-title"]}>
-            {description}
-          </span>
-        </div>
-        <ul className={styles["container-content-list"]}>
-          {content.map((item) => (
-            <li key={item.title} className={styles["li-outside"]}>
-              {item.title}
-              <ul>
-                {item.subtitles.map((subtitle) => (
-                  <span className={styles["contcont"]} key={subtitle}>
-                    •&nbsp;
-                    <li className={styles["li-inside"]}>{subtitle}</li>
-                  </span>
-                ))}
-              </ul>
+const TimelineItem = ({ data }: { data: Step }) => (
+  <div className="relative pl-10 pb-12">
+    {/* Dot — z-10 keeps it above the container line */}
+    <div className="absolute left-0 top-1.5 z-10 h-4 w-4 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 ring-4 ring-white dark:ring-stone-900" />
+
+    <h3 className="text-xl font-bold uppercase tracking-wide">{data.title}</h3>
+    {data.addinfo && (
+      <p className="mt-0.5 text-base font-semibold text-neutral-700 dark:text-neutral-300">
+        {data.addinfo}
+      </p>
+    )}
+    <p className="mt-0.5 mb-4 text-sm text-neutral-500">{data.description}</p>
+
+    {data.content.map((section) => (
+      <div key={section.title} className="mt-2">
+        <p className="mb-1 text-sm font-bold">{section.title}</p>
+        <ul className="space-y-1.5">
+          {section.subtitles.map((s) => (
+            <li key={s} className="flex gap-2 text-sm text-neutral-600 dark:text-neutral-400">
+              <span className="mt-0.5 shrink-0 text-blue-500">•</span>
+              <span>{s}</span>
             </li>
           ))}
         </ul>
       </div>
-    </div>
-  );
-};
+    ))}
+  </div>
+);
 
-const Timeline = () => {
-  return (
-    <section id="experience">
-      <div className="my-12 pb-12 md:pt-16 md:pb-48">
-        <h1 className="text-center font-bold text-4xl">
-          Experience
-          <hr className="w-6 h-1 mx-auto my-4 bg-gray-500 border-0 rounded"></hr>
-        </h1>
+const Timeline = () => (
+  <section id="experience">
+    <div className="my-12 pb-12 md:pt-16 md:pb-48">
+      <h1 className="text-center font-bold text-4xl">
+        Experience
+        <div className="w-12 h-1 mx-auto my-4 rounded-full bg-gradient-to-r from-blue-500 to-purple-600" />
+      </h1>
+
+      <div className="relative mt-10 max-w-2xl mx-auto">
+        {/* Single continuous line starting at first dot centre, masked to fade at bottom */}
         <div
-          className={`${styles["container-timeline"]} ${styles["container-roadMap"]}`}
-        >
-          {steps.map((step) => (
-            <SlideUp key={step.title}>
-              <TimelineItem data={step} index={0} />
-            </SlideUp>
-          ))}
-        </div>
+          className="absolute left-[7px] top-[14px] bottom-0 w-0.5 bg-blue-500/40"
+          style={{ maskImage: "linear-gradient(to bottom, black 75%, transparent 100%)" }}
+        />
+        {steps.map((step) => (
+          <SlideUp key={step.title}>
+            <TimelineItem data={step} />
+          </SlideUp>
+        ))}
       </div>
-    </section>
-  );
-};
+    </div>
+  </section>
+);
 
 export default Timeline;
