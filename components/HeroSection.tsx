@@ -32,10 +32,10 @@ const HeroSection = () => {
             Hi, I&#39;m Kacper!
           </h1>
           <p className="text-lg mt-4 mb-6 md:text-2xl">
-            Hi, I’m Kacper Burza — a Software Developer and Computer Engineering
-            graduate passionate about full-stack and cloud-native development. I
-            build scalable, secure applications with modern tools like React,
-            Node.js, and Spring Boot.
+            Hi, I’m Kacper Burza — a Software Developer with experience building
+            and modernizing enterprise applications across the full stack. I work
+            with technologies like Java Spring Boot, Node.js, and React, and
+            deploy on cloud platforms including GCP and Azure.
           </p>
 
           <a

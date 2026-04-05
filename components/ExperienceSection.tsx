@@ -27,10 +27,10 @@ const steps = [
       {
         title: "Key Contributions:",
         subtitles: [
-          "Upgraded and modernized enterprise-level projects built in Spring Boot and Node.js, deploying within Kubernetes clusters on GCP and Azure",
-          "Used Git and Bitbucket for version control and CI/CD pipeline management, participating in over a dozen deployments involving QA validation, debugging, and security remediation",
-          "Created and optimized Power BI dashboards for incident data from ServiceNow using SQL queries to improve visibility and analytics",
-          "Developed proofs of concept (PoCs) for a React (TypeScript) client onboarding application and for authentication/token-based microservices, designed for secure and scalable architecture",
+          "Contributed to upgrading and modernizing enterprise-level applications built in Java Spring Boot and Node.js, ensuring seamless integration and deployment across Kubernetes clusters in GCP and Azure",
+          "Leveraged Git and Bitbucket for version control and CI/CD pipelines, taking part in over a dozen production deployments, with responsibilities including QA validation, debugging, unit testing, and security remediation",
+          "Created and optimized Power BI dashboards for analyzing incident and operational data from ServiceNow, utilizing SQL to query data from Microsoft SQL Servers, improving visibility and reporting accuracy",
+          "Led the development of multiple proof-of-concept projects, including a React (TypeScript) client onboarding web app and a token-based authentication microservice, designed for secure, modular, and scalable architecture",
         ],
       },
     ],
@@ -43,9 +43,10 @@ const steps = [
       {
         title: "Details:",
         subtitles: [
-          "Developed a secure, full-stack internal tool for user functions, leveraging Next.js and FastAPI for an efficient application",
-          "Utilized AWS, Microsoft Azure, and Docker on a Linux distribution to package and deploy the application",
-          "Collaborated effectively within a team, using Git commands to manage code in an Azure repository",
+          "Developed a secure, full-stack internal tool to enhance user functionality using Next.js for the front end and FastAPI for the back end, ensuring a responsive and high-performing application",
+          "Utilized AWS App Studio for streamlined web development and integration of internal tools, and implemented a robust backend using an Amazon RDS Aurora PostgreSQL database for efficient data management",
+          "Deployed and managed applications on AWS and Microsoft Azure, utilizing Docker containers on a Linux environment for seamless packaging and deployment",
+          "Collaborated closely with cross-functional teams, effectively managing code with Git in an Azure DevOps environment to maintain high code quality and version control",
         ],
       },
     ],

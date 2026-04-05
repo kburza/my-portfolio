@@ -23,7 +23,7 @@ const steps = [
     title: "TMU",
     addinfo:
       "Toronto Metropolitan University (f.k.a Ryerson University) — Bachelor of Computer Engineering",
-    description: "Sept. 2018 — April. 2023 | Toronto, Ontario",
+    description: "Sept. 2018 — June 2023 | Toronto, Ontario",
     content: [
       {
         title: "Achievements:",
