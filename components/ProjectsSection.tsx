@@ -6,6 +6,15 @@ import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs";
 
 const projects = [
   {
+    name: "Implant ID",
+    description:
+      "Full-stack dental implant identification SaaS portal. Users navigate a step-by-step filtering wizard to identify implants across a 250+ record database spanning 30+ brands. Built with Next.js, React 19, TypeScript, Material UI, Drizzle ORM, Neon Postgres, and NextAuth — deployed on Vercel.",
+    image:
+      "https://demo-bucket-kap.s3.us-east-1.amazonaws.com/my-portfolio-projects-assets/my-portfolio-projects-assets/dentist-app.png",
+    github: "",
+    link: "https://dental-data-portal.vercel.app/",
+  },
+  {
     name: "DLSTR-ML",
     description:
       "Deep Learning Security Aggregate Tool. Uploads a tensorflow model and dataset to a GCP bucket which runs various open-source attacks on the ML model.",
