@@ -1,39 +1,56 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { SiNextdotjs } from "react-icons/si";
 import Link from "next/link";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { motion } from "framer-motion";
 
 const skills = [
-  { skill: "C" },
-  { skill: "C++" },
-  { skill: "System C" },
   { skill: "Java" },
+  { skill: "Spring Boot" },
   { skill: "JavaScript" },
   { skill: "TypeScript" },
-  { skill: "Verilog" },
-  { skill: "VHDL" },
-  { skill: "HTML5" },
-  { skill: "CSS" },
-  { skill: "SQL" },
-  { skill: "XML" },
-  { skill: "Git" },
   { skill: "Node.js" },
   { skill: "React.js" },
+  { skill: "Next.js" },
+  { skill: "FastAPI" },
+  { skill: "Python" },
+  { skill: "SQL" },
+  { skill: "PostgreSQL" },
+  { skill: "Power BI" },
+  { skill: "HTML5" },
+  { skill: "CSS" },
+  { skill: "Tailwind CSS" },
+  { skill: "Docker" },
+  { skill: "Kubernetes" },
+  { skill: "AWS" },
+  { skill: "GCP" },
+  { skill: "Azure" },
+  { skill: "Azure DevOps" },
+  { skill: "Git" },
   { skill: "Angular" },
   { skill: "Firebase" },
-  { skill: "Python" },
-  { skill: "Next.js" },
   { skill: "Three.js" },
-  { skill: "Tailwind CSS" },
+  { skill: "C" },
+  { skill: "C++" },
+  { skill: "Verilog" },
+  { skill: "XML" },
   { skill: "Matlab" },
-  { skill: "Docker" },
-  { skill: "AWS" },
   { skill: "SOLIDWORKS" },
-  { skill: "Sales" },
 ];
+
+const skillContainer = {
+  hidden: {},
+  visible: {
+    transition: { staggerChildren: 0.04, delayChildren: 0.1 },
+  },
+};
+
+const skillItem = {
+  hidden: { opacity: 0, scale: 0.8 },
+  visible: { opacity: 1, scale: 1, transition: { duration: 0.25 } },
+};
 
 const AboutSection = () => {
   return (
@@ -50,23 +67,24 @@ const AboutSection = () => {
               Information
             </h1>
             <p>
-              Hello, and welcome to my website! My name is Kacper Burza, and I
-              am a recent{" "}
+              Hello, and welcome to my website! My name is Kacper Burza — a{" "}
+              <span className="font-bold">Software Developer</span> based in
+              Toronto, Ontario. I graduated from{" "}
               <span className="font-bold">
-                {
-                  "Computer Engineering graduate from Toronto Metropolitan University"
-                }
-              </span>
-              , (formerly known as Ryerson University) located in Ontario,
-              Canada. I am passionate about software development, with expertise
-              spanning front-end and back-end technologies, cloud computing, and
-              agile methodologies. I take pride in building functional,
-              efficient, and aesthetically pleasing applications.
+                Toronto Metropolitan University with a degree in Computer
+                Engineering
+              </span>{" "}
+              and work on enterprise-grade applications across the full stack. I
+              am passionate about software development, with expertise spanning
+              front-end and back-end technologies, cloud computing, and agile
+              methodologies.
             </p>
             <br />
             <p>
               I have worked on full-stack web development projects using{" "}
-              <span className="font-bold">React, Next.js, FastAPI, AWS,</span>{" "}
+              <span className="font-bold">
+                Java Spring Boot, React, Next.js, FastAPI, AWS,
+              </span>{" "}
               and <span className="font-bold">Microsoft Azure.</span> As an{" "}
               <span className="font-bold">Enterprise Technology Intern</span> at{" "}
               <span className="font-bold">CanDeal</span>, I developed a secure
@@ -93,59 +111,58 @@ const AboutSection = () => {
               <span className="font-bold">Agile/Scrum</span> methodologies and
               cross-functional teamwork. Fluent in both{" "}
               <span className="font-bold">English</span> and{" "}
-              <span className="font-bold">Polish</span>, I’m proficient in a
+              <span className="font-bold">Polish</span>, I&#39;m proficient in a
               range of programming languages including{" "}
               <span className="font-bold">
-                JavaScript/TypeScript, C/C++, Python,
+                JavaScript/TypeScript, Java, C/C++, Python,
               </span>{" "}
               and <span className="font-bold">SQL</span>.
             </p>
             <br />
             <p>
               Thank you for visiting my website! Feel free to explore my work,
-              and don’t hesitate to reach out if you have any questions or would
-              like to discuss potential collaborations.
+              and don&#39;t hesitate to reach out if you have any questions or
+              would like to discuss potential collaborations.
             </p>
           </div>
 
           <div className="text-center md:w-1/2 md:text-left">
             <h1 className="text-2xl font-bold mb-6">Skills</h1>
-            <div className="flex flex-wrap flex-row justify-center z-10 md:justify-start">
-              {skills.map((item, idx) => {
-                return (
-                  <p
-                    key={idx}
-                    className="bg-gray-200 px-4 py-2 mr-2 mt-2 text-gray-500 rounded font-semibold"
-                  >
-                    {item.skill}
-                  </p>
-                );
-              })}
-            </div>
+            <motion.div
+              className="flex flex-wrap flex-row justify-center z-10 md:justify-start"
+              variants={skillContainer}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-50px" }}
+            >
+              {skills.map((item, idx) => (
+                <motion.p
+                  key={idx}
+                  variants={skillItem}
+                  className="bg-gray-200 px-4 py-2 mr-2 mt-2 text-gray-500 rounded font-semibold"
+                >
+                  {item.skill}
+                </motion.p>
+              ))}
+            </motion.div>
+
             <div style={{ paddingTop: "20px" }}>
               <h1 className="text-2xl font-bold mb-6">Certifications</h1>
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                }}
-              >
+              <div className="flex justify-center">
                 <Carousel showThumbs={false} showStatus={false} width="300px">
                   <div>
                     <Link
                       href="https://www.credly.com/badges/72780e0b-d8d7-4ad5-bce5-bf4660594728/public_url"
                       target="_blank"
                     >
-                      <div>
-                        <Image
-                          src="https://demo-bucket-kap.s3.amazonaws.com/certifications/awscloudpractitioner.png"
-                          alt=""
-                          width={600}
-                          height={600}
-                          className="rounded-xl shadow-xl hover:opacity-70"
-                          style={{ paddingBottom: "40px" }}
-                        />
-                      </div>
+                      <Image
+                        src="https://demo-bucket-kap.s3.amazonaws.com/certifications/awscloudpractitioner.png"
+                        alt="AWS Certified Cloud Practitioner"
+                        width={600}
+                        height={600}
+                        className="rounded-xl shadow-xl hover:opacity-70"
+                        style={{ paddingBottom: "40px" }}
+                      />
                     </Link>
                   </div>
                   <div>
@@ -153,16 +170,14 @@ const AboutSection = () => {
                       href="https://university.solidworks.com/#/catalog/course:1259052"
                       target="_blank"
                     >
-                      <div>
-                        <Image
-                          src="https://demo-bucket-kap.s3.amazonaws.com/certifications/SW_badge.png"
-                          alt=""
-                          width={279}
-                          height={277}
-                          className="rounded-xl hover:opacity-70"
-                          style={{ paddingBottom: "40px" }}
-                        />
-                      </div>
+                      <Image
+                        src="https://demo-bucket-kap.s3.amazonaws.com/certifications/SW_badge.png"
+                        alt="SolidWorks Certification"
+                        width={279}
+                        height={277}
+                        className="rounded-xl hover:opacity-70"
+                        style={{ paddingBottom: "40px" }}
+                      />
                     </Link>
                   </div>
                   <div>
@@ -170,19 +185,16 @@ const AboutSection = () => {
                       href="https://university.solidworks.com/#/catalog/course:24463"
                       target="_blank"
                     >
-                      <div>
-                        <Image
-                          src="https://demo-bucket-kap.s3.amazonaws.com/certifications/SW_badge.png"
-                          alt=""
-                          width={279}
-                          height={277}
-                          className="rounded-xl hover:opacity-70"
-                          style={{ paddingBottom: "40px" }}
-                        />
-                      </div>
+                      <Image
+                        src="https://demo-bucket-kap.s3.amazonaws.com/certifications/SW_badge.png"
+                        alt="SolidWorks Certification"
+                        width={279}
+                        height={277}
+                        className="rounded-xl hover:opacity-70"
+                        style={{ paddingBottom: "40px" }}
+                      />
                     </Link>
                   </div>
-                  <></>
                 </Carousel>
               </div>
             </div>

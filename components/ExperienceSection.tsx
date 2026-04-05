@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Timeline.module.css";
+import SlideUp from "./SlideUp";
 
 interface Subtitle {
   title: string;
@@ -133,8 +134,10 @@ const Timeline = () => {
         <div
           className={`${styles["container-timeline"]} ${styles["container-roadMap"]}`}
         >
-          {steps.map((step, index) => (
-            <TimelineItem data={step} key={step.title} index={index} />
+          {steps.map((step) => (
+            <SlideUp key={step.title}>
+              <TimelineItem data={step} index={0} />
+            </SlideUp>
           ))}
         </div>
       </div>

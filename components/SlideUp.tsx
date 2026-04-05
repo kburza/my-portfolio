@@ -1,36 +1,22 @@
-"use client" // this is a client component
+"use client"
 
-import React, { useEffect, useRef, ReactNode } from "react"
+import { motion } from "framer-motion"
+import { ReactNode } from "react"
+
 interface Props {
-  offset?: string
   children?: ReactNode
-  // any props that come into the component
+  offset?: string // kept for API compatibility, unused
 }
 
-export default function SlideUp({ children, offset = "0px" }: Props) {
-  const ref = useRef(null)
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.remove("opacity-0")
-            entry.target.classList.add("animate-slideUpCubiBezier")
-          }
-        })
-      },
-      { rootMargin: offset }
-    )
-
-    if (ref.current) {
-      observer.observe(ref.current)
-    }
-  }, [ref])
-
+export default function SlideUp({ children }: Props) {
   return (
-    <div ref={ref} className="relative opacity-0">
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-80px" }}
+      transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+    >
       {children}
-    </div>
+    </motion.div>
   )
 }
